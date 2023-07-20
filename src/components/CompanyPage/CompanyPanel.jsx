@@ -9,15 +9,16 @@ const Container = styled.div`
     justify-content: space-between; 
     flex-wrap: wrap;
     padding-bottom: 80px;
+    height: auto;
 
     background: url(${HomePG});
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
 
+    // border: solid black;
     @media only screen and (max-width: 400px) {
-        // border: solid black;
-        width: 99%;
+
      }
 `
 
@@ -29,8 +30,8 @@ const TextContainer = styled.div`
     flex-direction: column; 
 
     gap: 40px;
-    height: 300px;
-    width: 400px;
+    height: auto;
+    width: 500px;
 
     // border: solid black;
 
@@ -56,13 +57,15 @@ const Header = styled.div`
 `
 const Description = styled.div`
     font-size: 22px;
-    width: 600px;
+    min-width: 330px;
 
     @media only screen and (max-width: 400px) {
-        width: 300px;
+        width: 330px;
         text-align: center;
 
      }
+    //  border: solid black; 
+
 `
 
 const Button = styled.div`
@@ -116,8 +119,8 @@ function CompanyPanel() {
                 </Button>
             </TextContainer>
             <PictureContainer> 
-            <PictureBox src={CompanyBG} />
-        </PictureContainer>
+                <PictureBox src={CompanyBG} />
+            </PictureContainer>
             
 
         </Container>

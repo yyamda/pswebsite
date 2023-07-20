@@ -39,6 +39,8 @@ const HeadingTitle = styled.div`
 const HeadingSubtitle = styled.div`
     font-size: 22px;
     padding-bottom: 40px;
+    height: auto; 
+    min-width: 250px;
 `
 
 const PictureContainer = styled.div`

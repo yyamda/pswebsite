@@ -16,7 +16,6 @@ const Container = styled.div`
     // border: solid black;
 
     @media only screen and (max-width: 400px) {
-        margin-top: 700px;
         margin-left: 400px;
      }
 `

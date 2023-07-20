@@ -5,9 +5,9 @@ import HomePG from '../images/HomeBG.png'
 const Container = styled.div`
     display: flex; 
     justify-content: flex-end;
-    margin-right: 210px;
     padding-top: 70px;
     padding-bottom: 70px;
+    padding-right: 100px;
  
     background: url(${HomePG});
     background-size: cover;

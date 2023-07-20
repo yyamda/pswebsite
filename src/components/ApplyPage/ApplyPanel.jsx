@@ -45,6 +45,10 @@ const PictureContainer = styled.div`
     height: 450px;;
     width: 600px;
 
+    @media only screen and (max-width: 1270px) {
+        display: none;
+    }
+
     // border: solid black;
 
 `

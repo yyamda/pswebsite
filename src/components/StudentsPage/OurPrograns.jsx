@@ -16,6 +16,12 @@ const ProgramContainer = styled.div`
     justify-content: space-around;
     padding-bottom: 70px;
 
+    @media only screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
     // border: solid black;
 
 `
@@ -23,6 +29,14 @@ const ProgramContainer = styled.div`
 const ProgramText = styled.div`
     width: 40%;
 
+    @media only screen and (max-width: 1000px) {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+
+        // border: solid blue;
+    }
     @media only screen and (max-width: 400px) {
         width: 300px;
 
@@ -37,8 +51,15 @@ const Image = styled.img`
 
     // border: solid black;
 
+    @media only screen and (max-width: 1000px) {
+        margin-top: 100px;
+        width: 500px;
+        height: 350px;
+    }
+
     @media only screen and (max-width: 400px) {
-        display: none;
+        width: 300px;
+        height: 200px;
     }
 
 `
@@ -70,6 +91,10 @@ const Description = styled.div`
     line-height: 2;
     padding-left: 50px;
 
+    @media only screen and (max-width: 1000px) {
+        width: 500px;
+        // border: solid black;
+    }
     @media only screen and (max-width: 400px) {
         padding-left: 20px;
         text-align: center;
@@ -108,7 +133,6 @@ function OurPrograms() {
                 <Image src={Fellowship}/>
             </ProgramContainer>
             <ProgramContainer>
-                <Image src={Client}/>
                 <ProgramText>
                     <Title> Client</Title>
                     <Description>
@@ -124,6 +148,7 @@ function OurPrograms() {
                         your growth as a product manager.
                     </Description>
                 </ProgramText>
+                <Image src={Client}/>
 
             </ProgramContainer>
 

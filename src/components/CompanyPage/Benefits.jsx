@@ -8,12 +8,12 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: auto;
+    margin-top: 40px;
 
     // border: solid black;
 
     @media only screen and (max-width: 400px) {
-        margin-top: 450px;
      }
 `
 
@@ -25,7 +25,12 @@ const TextContainer = styled.div`
     align-items: center; 
     padding-bottom: 40px;
 
-    // border: solid blue; 
+
+    @media only screen and (max-width: 400px) {
+        width: 300px;
+
+     }
+    //  border: solid blue;
 `
 
 const Title = styled.h3`
@@ -37,7 +42,7 @@ const Title = styled.h3`
 
 const CardContainer = styled.div`
     width: 80%;
-    height: 600px;
+    height: auto;
     display: flex; 
     flex-direction: row;
     justify-content: center;
@@ -45,9 +50,15 @@ const CardContainer = styled.div`
     
     // border: solid red;
 
+    @media only screen and (max-width: 1000px) {
+        display; flex; 
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
     @media only screen and (max-width: 400px) {
         width: 100%;
-        margin-top: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -69,6 +80,13 @@ const Card = styled.div`
         box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.1);
         transition: box-shadow 0.3s ease;
       }
+
+
+    @media only screen and (max-width: 700px) {
+        width: 300px;
+        height: 500px;
+        // border: solid red;
+    }
 
     @media only screen and (max-width: 400px) {
         width: 300px;

@@ -7,10 +7,11 @@ import MaskBlob from '../images/blob.svg'
 
 const Panel = styled.div`
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    top: 0;
     // margin-top: 70px;
 
     background: url(${HomePG});
@@ -32,6 +33,7 @@ const OpeningHeader = styled.div`
     justify-content: center;
     gap: 10px;
     padding-left: 90px;
+    align-items: flex-start;
 
     // border: solid yellow;
 
@@ -53,15 +55,21 @@ const HeadingTitle = styled.div`
     font-size: 60px;
     padding-bottom: 20px;
 
+    // border: solid yellow;
+
 `
 
 const HeadingSubtitle = styled.div`
     font-size: 26px;
     padding-bottom: 40px;
+    min-width: 350px;
+
+    // border: solid blue;
+
 
     @media only screen and (max-width: 400px) {
         height: 600px;
-
+        
         // border: solid black;
 
     }

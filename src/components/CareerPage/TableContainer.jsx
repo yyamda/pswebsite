@@ -63,7 +63,7 @@ const HeaderName = styled.div`
     color: white; 
     width: 300px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 1000px) {
         width: 200px;
     }
 `
@@ -71,7 +71,7 @@ const HeaderCompany = styled.div`
     color: white; 
     width: 300px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 1000px) {
         width: 200px;
     }
 
@@ -81,6 +81,10 @@ const HeaderTitle = styled.div`
     color: white; 
     padding-right: 20px;
 
+
+    @media only screen and (max-width: 1000px) {
+        width: 200px;
+    }
 
     @media only screen and (max-width: 400px) {
         display: none;
@@ -92,7 +96,7 @@ const HeaderYear = styled.div`
     color: white; 
     width: 300px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 1000px) {
         display: none;
     }
 `
@@ -102,7 +106,7 @@ const Name = styled.div`
     color: #656565; 
     width: 300px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 1000px) {
         width: 200px;
     }
 `
@@ -110,7 +114,7 @@ const Company = styled.div`
     color: #656565; 
     width: 300px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 1000px) {
         width: 200px;
     }
 
@@ -120,6 +124,10 @@ const Title = styled.div`
     color: #656565; 
     padding-right: 20px;
 
+    @media only screen and (max-width: 1000px) {
+        width: 200px;
+    }
+    
     @media only screen and (max-width: 400px) {
         display: none;
     }
@@ -128,7 +136,7 @@ const Year = styled.div`
     color: #656565; 
     width: 300px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 1000px) {
         display: none;
     }
 

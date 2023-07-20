@@ -24,6 +24,8 @@ const Panel = styled.div`
 
     }
 
+
+
 `
 const OpeningHeader = styled.div`
     width: 45%; 
@@ -54,10 +56,13 @@ const HeadingTitle = styled.div`
 const HeadingSubtitle = styled.div`
     font-size: 22px;
     padding-bottom: 40px;
+    min-width: 350px;
 
     @media only screen and (max-width: 400px) {
-        width: 300px;
+        width: 350px;
+        height: 300px;
         text-align: center;
+        border: solid red;
     }
 
 `

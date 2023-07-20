@@ -20,6 +20,11 @@ const Container = styled.div`
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 400px) {
+        display: none;
+
+    }
 `
 
 const TextContainer = styled.div`

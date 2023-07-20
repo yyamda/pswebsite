@@ -9,19 +9,19 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: auto;
+    top: 0;
 
     // border: solid black;
 
     @media only screen and (max-width: 400px) {
-        
+
     }
-    
 `
 
 const TextContainer = styled.div`
     width: 45%;
-    height: 200px;
+    height: auto;
     display: flex; 
     flex-direction: column;
     align-items: center; 
@@ -32,7 +32,6 @@ const TextContainer = styled.div`
     @media only screen and (max-width: 400px) {
         display: flex;
         width: 75%;
-        margin-top: 800px;
         margin-bottom: 50px;
         // border: solid black;
     }
@@ -60,14 +59,22 @@ const Subtitle = styled.h2`
 
 const CardContainer = styled.div`
     width: 80%;
-    height: 350px;
+    height: auto;
     display: flex; 
     flex-direction: row;
     justify-content: center;
     gap: 70px;
-    
+    margin-top: 50px;
     // border: solid red;
 
+
+    @media only screen and (max-width: 780px) {
+        display: flex;
+        flex-direction: column;
+        display-content: center;
+        align-items: center;
+
+    }
     @media only screen and (max-width: 400px) {
         width: 350px;
         height: auto;
