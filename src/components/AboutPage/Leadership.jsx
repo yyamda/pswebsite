@@ -45,6 +45,10 @@ const LeaderCard = styled.div`
     align-items: center;
     padding-bottom: 10px;
 
+    &:hover {
+        border: solid black;
+      }
+
     // border: solid black;
 
 `
@@ -60,6 +64,47 @@ const LeaderImage = styled.img`
     width: 250px;
     height: 320px; 
 `
+const TestInfo = styled.div`
+    width: 220px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 300px;
+    border: solid purple;
+    transition: margin-top 0.5s;
+    background-color: white;
+    opacity: 0.9;
+`
+const TestImage = styled.img`
+    width: 200px;
+    height: 250px; 
+    border: solid black;
+
+    padding-bottom: 10px;
+`
+
+const TestCard = styled.div`
+    width: 250px;
+    height: 380px; 
+    position: relative;
+    
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+
+    &:hover ${TestInfo} {
+        margin-top: 0px;
+      }
+    
+    // &:hover ${TestImage} {
+    //     opacity: 0.1;
+    // }
+    padding-top: 10px;
+
+    border: solid blue;
+`
 
 
 function Leadership() {
@@ -67,6 +112,12 @@ function Leadership() {
        <Container> 
             <HeadingText> LEADERSHIP</HeadingText>
             <LeadersContainer> 
+                <TestCard>
+                    <TestImage src={tyler} alt="leader " /> 
+                    <TestInfo>
+                        HELLO
+                    </TestInfo>
+                </TestCard>
                 <LeaderCard>
                     <LeaderImage src={tyler} alt="leader" />
                     <LeaderName> Jordan Yee</LeaderName>
@@ -94,7 +145,7 @@ function Leadership() {
                 </LeaderCard>
                 <LeaderCard>
                     <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Mitchelle Lee</LeaderName>
+                    <LeaderName> Michelle Lee</LeaderName>
                     <LeaderPosition> Fellowship Mentor</LeaderPosition>
                 </LeaderCard>
                 <LeaderCard>
@@ -105,7 +156,7 @@ function Leadership() {
                 <LeaderCard>
                     <LeaderImage src={tyler} alt="leader" />
                     <LeaderName> Cady Hsu</LeaderName>
-                    <LeaderPosition> Fellowship Mentory</LeaderPosition>
+                    <LeaderPosition> Fellowship Mentor</LeaderPosition>
                 </LeaderCard>
                 <LeaderCard>
                     <LeaderImage src={tyler} alt="leader" />

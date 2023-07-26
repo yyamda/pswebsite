@@ -45,8 +45,8 @@ const ProgramText = styled.div`
 `
 
 const Image = styled.img`
-    width: 650px;
-    height: 400px;
+    width: 550px;
+    height: 300px;
 
 
     // border: solid black;

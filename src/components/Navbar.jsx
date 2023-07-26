@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import HomeLogo from './images/psHomeLogo.png'
 import hamburgerIcon from './images/hamburgerIcon.png'
 import React, { useState } from 'react'
@@ -22,18 +22,49 @@ const Container = styled.div`
   }
 `
 
-
-const ListItem = styled(Link)`
+const ANavLink = styled(NavLink)`
     color: #1C2838;
     font-size: 16px;
     text-decoration: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &.active {
+      font-weight: 400; 
+      color: #EB5594; 
+    }
+
+    &:hover {
+      color: #EB5594; 
+      transition: 0.5s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute; 
+      left: 1;
+      bottom: 0;
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: #EB5594;
+      transition: width 0.4s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
 
     // border: black solid;
 
     @media only screen and (max-width: 400px) {
         // border: solid black;
     }
+
 `;
+
 
 const HomeIcon = styled.img`
     height: 50px;
@@ -90,7 +121,7 @@ const DropdownItemContainer = styled.div`
   // border: solid blue;
 
 `
-const DropdownListItem = styled(Link)`
+const DropdownListItem = styled(NavLink)`
     color: #1C2838;
     font-size: 16px;
     text-decoration: none;
@@ -103,6 +134,11 @@ const DropdownListItem = styled(Link)`
     align-items: center; 
 
     // border: black solid;
+
+    &.active {
+      font-weight: 400; 
+      color: #EB5594; 
+    }
 
 
 `;
@@ -133,17 +169,17 @@ function Navbar() {
   return (
     <Container>
         <HomeContainer>
-          <Link to="/Home" >
+          <NavLink to="/Home" >
             <HomeIcon src={HomeLogo} alt='ImageNotLoading'/>
-          </Link>
+          </NavLink>
         </HomeContainer>
         <ItemContainer>
-            <ListItem to="/Home" onClick={handleLinkClick}> Home </ListItem>
-            <ListItem to="/About" onClick={handleLinkClick}> About </ListItem>
-            <ListItem to="/Students" onClick={handleLinkClick}> Students </ListItem>
-            <ListItem to="/Companies" onClick={handleLinkClick}> Companies </ListItem>
-            <ListItem to="/Careers" onClick={handleLinkClick}> Careers </ListItem>
-            <ListItem to="/Apply" onClick={handleLinkClick}> Apply </ListItem>
+            <ANavLink to="/Home" onClick={handleLinkClick} activeClassName="active"> Home </ANavLink>
+            <ANavLink to="/About" onClick={handleLinkClick} activeClassName="active"> About </ANavLink>
+            <ANavLink to="/Students" onClick={handleLinkClick} activeClassName="active"> Students </ANavLink>
+            <ANavLink to="/Companies" onClick={handleLinkClick} activeClassName="active"> Companies </ANavLink>
+            <ANavLink to="/Careers" onClick={handleLinkClick} activeClassName="active"> Careers </ANavLink>
+            <ANavLink to="/Apply" onClick={handleLinkClick} activeClassName="active"> Apply </ANavLink>
         </ItemContainer>
         <DropdownContainer>
           <HamburgerIcon src={hamburgerIcon} onClick={() => handleClick()}/>

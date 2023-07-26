@@ -22,6 +22,10 @@ const Table = styled.div`
 
     // border: solid black; 
 
+
+    @media only screen and (max-width: 400px) {
+        width: auto
+    }
 `
 
 const Row = styled.div`
@@ -37,6 +41,10 @@ const DateRow = styled.div`
     width: 200px;
 
     // border: solid black;
+    @media only screen and (max-width: 400px) {
+        margin-right: 15px;
+        width: 100px;
+    }
 `
 
 const DateText = styled.div`
@@ -68,6 +76,13 @@ const InfoRow = styled.div`
     background-size: 100% 3px;
 
     // border: solid purple;
+
+    @media only screen and (max-width: 1000px) {
+        height: auto;
+    }
+    @media only screen and (max-width: 400px) {
+        width: 200px;
+    }
 `
 
 const RowTitle = styled.div`
@@ -100,6 +115,8 @@ const RowLocation = styled.div`
     margin-bottom: 5px;
 
     // border: solid blue; 
+
+
 `
 
 
