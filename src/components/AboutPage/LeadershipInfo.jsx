@@ -54,7 +54,7 @@ const FullName = styled.div`
 const Position = styled.div`
     height: 40px;
     margin-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-size: 18px;
     text-align: center;
 
@@ -67,14 +67,13 @@ const Position = styled.div`
 `
 
 const SubInfoContainer = styled.div`
-    width: 170px; 
-    height: 200px; 
+    width: 190px; 
     border-radius: 5px;
 
     font-size: 14px;
     gap: 10px;
 
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -89,7 +88,6 @@ const SubInfoContainer = styled.div`
 const Hobbies = styled.div`
     padding-top: 10px;
     padding-left: 15px;
-    margin-bottom: 20px;
     width: 230px;
     font-size: 14px;
 
@@ -97,9 +95,8 @@ const Hobbies = styled.div`
     // border: solid black;
 `
 const Email = styled.div`
-
     font-size: 14px;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-bottom: 10px;
 `
 const LinkContainer = styled.div`
@@ -129,8 +126,6 @@ const CoffeeChat = styled.a`
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-
-
     // border: solid blue;
 `
 
@@ -153,9 +148,11 @@ function LeadershipInfo(props) {
                     {email}
                 </Email>
                 <LinkContainer>
-                    <LinkedIn href={linkedin} target="_blank" rel="noopener noreferrer">
+                    {linkedin ? (
+                        <LinkedIn href={linkedin} target="_blank" rel="noopener noreferrer">
                         <img src={linkedinIcon} alt="LinkedIn" width="40" height="35"/>
                     </LinkedIn>
+                    ) : null}
                     <CoffeeChat href="calendly.com" target="_blank" rel="noopener noreferrer">
                         Coffee Chat Me! 
                     </CoffeeChat>
