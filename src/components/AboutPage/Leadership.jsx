@@ -1,5 +1,22 @@
 import styled from "styled-components"
+import LeadershipInfo from "./LeadershipInfo"
+import jordan from "../images/jordan.png"
+import yuta from "../images/yuta.png"
+import hana from "../images/hana.png"
+import geetanjali from "../images/geetanjali.png"
+import krish from "../images/krish.png"
+import raymond from "../images/raymond.png"
+import lucas from "../images/lucas.png"
+import angela from "../images/angela.png"
+import anisa from "../images/anisa.png"
+import shannon from "../images/shannon.png"
 import tyler from "../images/tyler.png"
+import garrett from "../images/garrett.png"
+import cady from "../images/cady.png"
+import michelle from "../images/michelle.png"
+
+
+
 
 const Container = styled.div`
     display: flex; 
@@ -19,6 +36,7 @@ const HeadingText = styled.h2`
     font-weight: 500;
     font-size: 30px;
     padding-bottom: 20px;
+    padding-top: 40px;
 
 `
 
@@ -30,63 +48,44 @@ const LeadersContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; 
-    gap: 25px;
-
+    gap: 50px;
 
     // border: black solid;
 `
-const LeaderCard = styled.div`
-    width: 300px;
-    height: 450px;
-
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-
-    &:hover {
-        border: solid black;
-      }
-
+const LeaderImage = styled.img`
+    width: 225px;
+    height: 295px; 
+    border-radius: 10px;
+    margin-top: 10px;
     // border: solid black;
 
+    padding-bottom: 10px;
 `
-
-const LeaderName = styled.h2`
-    font-weight: normal;
-`
-const LeaderPosition = styled.h3`
-    font-weight: normal;
-
-`
-const LeaderImage = styled.img`
+const LeaderInfo = styled.div`
     width: 250px;
-    height: 320px; 
-`
-const TestInfo = styled.div`
-    width: 220px;
     height: 500px;
     position: absolute;
     overflow: hidden;
-    margin-top: 300px;
-    border: solid purple;
+    margin-top: 320px;
+    
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
     transition: margin-top 0.5s;
     background-color: white;
-    opacity: 0.9;
-`
-const TestImage = styled.img`
-    width: 200px;
-    height: 250px; 
-    border: solid black;
+    opacity: 0.95;
+    border-radius: 10px;
 
-    padding-bottom: 10px;
+    // border: solid purple;
 `
 
-const TestCard = styled.div`
-    width: 250px;
-    height: 380px; 
+const LeaderCard = styled.div`
+    width: 280px;
+    height: 430px; 
     position: relative;
+    background: #F9D4DF;
+    border-radius: 10px;
     
     overflow: hidden; 
     display: flex; 
@@ -94,16 +93,13 @@ const TestCard = styled.div`
     align-items: center;
 
 
-    &:hover ${TestInfo} {
+    &:hover ${LeaderInfo} {
         margin-top: 0px;
       }
     
-    // &:hover ${TestImage} {
-    //     opacity: 0.1;
-    // }
     padding-top: 10px;
 
-    border: solid blue;
+    // border: solid blue;
 `
 
 
@@ -112,88 +108,157 @@ function Leadership() {
        <Container> 
             <HeadingText> LEADERSHIP</HeadingText>
             <LeadersContainer> 
-                <TestCard>
-                    <TestImage src={tyler} alt="leader " /> 
-                    <TestInfo>
-                        HELLO
-                    </TestInfo>
-                </TestCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Jordan Yee</LeaderName>
-                    <LeaderPosition> President</LeaderPosition>
+                    <LeaderImage src={jordan} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Jordan Yee" position="President" grade="Senior" 
+                    major="EECS" hobbies="sports, sports, apple"
+                    email="jordantyee@berkeley.edu" linkedin="https://www.linkedin.com/in/jordan-terence-yee/"
+                    calendlylink="calendly.com"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Yuta Yamada</LeaderName>
-                    <LeaderPosition> VP of Fellowship / Co-IVP</LeaderPosition>
+                    <LeaderImage src={yuta} alt="leader " /> 
+                    <LeaderInfo> 
+                        <LeadershipInfo fullname="Yuta Yamada" position="VP Fellowship & IVP" grade="Junior" 
+                        major="CS & DS" hobbies="tennis, music production, causing trouble"
+                        email="yutayamada@berkeley.edu" linkedin="https://www.linkedin.com/in/yutayamada/"
+                        calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Geetanjali Jain</LeaderName>
-                    <LeaderPosition> Internal Vice President</LeaderPosition>
+                    <LeaderImage src={hana} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Hana McNierney" position="VP of Projects" grade="Junior" 
+                    major="Business" hobbies="dogs and cats"
+                    email="hanamcnierney@berkeley.edu" linkedin="https://www.linkedin.com/in/hana-mcnierney/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Hana McNierney</LeaderName>
-                    <LeaderPosition> VP of Projects</LeaderPosition>
+                    <LeaderImage src={geetanjali} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Geetanjali Jain" position="Internal Vice President" grade="Junior" 
+                    major="Data Science" hobbies="going on long walks, hosting game nights, trying new recipes and playing with dogs"
+                    email="gjainn@berkeley.edu" linkedin="https://www.linkedin.com/in/gjainn/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Krish Kumar</LeaderName>
-                    <LeaderPosition> VP of Development</LeaderPosition>
+                    <LeaderImage src={krish} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Krish Kumar" position="VP of Development" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Michelle Lee</LeaderName>
-                    <LeaderPosition> Fellowship Mentor</LeaderPosition>
+                    <LeaderImage src={michelle} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Michelle Lee" position="Fellowship Mentor" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Garrett Chau</LeaderName>
-                    <LeaderPosition> Fellowship Mentor</LeaderPosition>
+                    <LeaderImage src={garrett} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Garrett Chau" position="Fellowship Mentor" grade="Senior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Cady Hsu</LeaderName>
-                    <LeaderPosition> Fellowship Mentor</LeaderPosition>
+                    <LeaderImage src={cady} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Cady Hsu" position="Fellowship Mentor" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Lucas Omori</LeaderName>
-                    <LeaderPosition> Project Manager</LeaderPosition>
+                    <LeaderImage src={anisa} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Anisa Majhi" position="Project Manager" grade="Sophomore" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Shannon Or</LeaderName>
-                    <LeaderPosition> Project Manager</LeaderPosition>
+                    <LeaderImage src={tyler} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Truong Nguyen" position="Project Manager" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Truong Nguyen</LeaderName>
-                    <LeaderPosition> Project Manager</LeaderPosition>
+                    <LeaderImage src={shannon} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Shannon Or" position="Project Manager" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Raymond Feng</LeaderName>
-                    <LeaderPosition> Project Manager</LeaderPosition>
+                    <LeaderImage src={raymond} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Raymond Feng" position="Project Manager" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Anisa Majhi</LeaderName>
-                    <LeaderPosition> Project Manager</LeaderPosition>
+                    <LeaderImage src={lucas} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Lucas Omori" position="Project Manager" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
+                </LeaderCard>
+            
+                <LeaderCard>
+                    <LeaderImage src={angela} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Angela Zhang" position="Content Manager" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Wesley Griff</LeaderName>
-                    <LeaderPosition> Project Manager</LeaderPosition>
+                    <LeaderImage src={tyler} alt="leader " /> 
+                    <LeaderInfo> 
+                   
+                    <LeadershipInfo fullname="Lauren Sung" position="Historian" grade="Junior" 
+                    major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
+                    email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
+                    calendlylink="HELLO"/>
+                    </LeaderInfo>
                 </LeaderCard>
-                <LeaderCard>
-                    <LeaderImage src={tyler} alt="leader" />
-                    <LeaderName> Angela Zhang</LeaderName>
-                    <LeaderPosition> Content Manager</LeaderPosition>
-                </LeaderCard>
-
+  
             </LeadersContainer>
        </Container>
     )

@@ -16,6 +16,7 @@ const Container = styled.div`
     background: #FFFDFD;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2); 
     overflow: hidden;
+    z-index: 900;
 
     @media only screen and (max-width: 780px) {
       overflow: visible;
