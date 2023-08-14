@@ -30,6 +30,16 @@ const TextContainer = styled.div`
     gap: 40px;
 
     // border: solid black;
+
+    @media only screen and (max-width: 400px) {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-right: 0px;
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        // border: solid red;
+    }
 `
 const Header = styled.div`
     padding-top: 30px;

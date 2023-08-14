@@ -179,7 +179,7 @@ function Timeline() {
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/2 (Sat) </DateText>
+                        <DateText> 9/1 (Fri) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Applications Close! (12AM Midnight)  </RowTitle>

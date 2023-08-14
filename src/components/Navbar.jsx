@@ -14,6 +14,7 @@ const Container = styled.div`
     align-items: center;
     gap: 50px;
     background: #FFFDFD;
+    opacity: 0.95;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2); 
     overflow: hidden;
     z-index: 900;
@@ -196,16 +197,6 @@ function Navbar() {
             </DropdownItemContainer>
         }
         </DropdownContainer>
-                
-{/* 
-        <DropdownMenu> 
-            <ListItem to="/Home" onClick={handleLinkClick}> Home </ListItem>
-            <ListItem to="/About" onClick={handleLinkClick}> About </ListItem>
-            <ListItem to="/Students" onClick={handleLinkClick}> Students </ListItem>
-            <ListItem to="/Companies" onClick={handleLinkClick}> Companies </ListItem>
-            <ListItem to="/Careers" onClick={handleLinkClick}> Careers </ListItem>
-            <ListItem to="/Apply" onClick={handleLinkClick}> Apply </ListItem>
-        </DropdownMenu> */}
     </Container>
   );
 }

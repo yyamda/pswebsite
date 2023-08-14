@@ -153,7 +153,7 @@ function LeadershipInfo(props) {
                         <img src={linkedinIcon} alt="LinkedIn" width="40" height="35"/>
                     </LinkedIn>
                     ) : null}
-                    <CoffeeChat href="calendly.com" target="_blank" rel="noopener noreferrer">
+                    <CoffeeChat href={calendlylink} target="_blank" rel="noopener noreferrer">
                         Coffee Chat Me! 
                     </CoffeeChat>
                 

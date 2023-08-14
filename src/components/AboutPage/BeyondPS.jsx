@@ -124,18 +124,18 @@ function BeyondPS() {
                     <Logos src={blizzard} alt="Blizzard" width={160}  height={80}/>
                     <Logos src={bcg} alt="Boston Consulting Group" width={140}  height={90}/>
                     <Logos src={cisco} alt="Cisco" width={125}  height={80}/>
-                    <Logos src={stripe} alt="Stripe" width={145}  height={80}/>
-                    <Logos src={amazon} alt="Amazon" width={145}  height={90}/>
+                    <Logos src={stripe} alt="Stripe" width={145}  height={65}/>
+                    <Logos src={amazon} alt="Amazon" width={145}  height={75}/>
                     <Logos src={workday} alt="Workday" width={140}  height={90}/>
                     <Logos src={pan} alt="Palo Alto Networks" width={200}  height={70}/>
                     <Logos src={roblox} alt="Roblox" width={90}  height={90}/>
                     <Logos src={twitter} alt="Twitter" width={90}  height={90}/>
-                    <Logos src={uber} alt="Uber" width={100}  height={90}/>
+                    <Logos src={uber} alt="Uber" width={100}  height={75}/>
                     <Logos src={IBM} alt="IBM" width={130}  height={70}/>
                     <Logos src={nvidia} alt="NVIDIA" width={200}  height={80}/>
-                    <Logos src={retool} alt="Retool" width={180}  height={70}/>
+                    <Logos src={retool} alt="Retool" width={180}  height={60}/>
                     <Logos src={tackle} alt="Tackle.io" width={190}  height={60}/>
-                    <Logos src={bain} alt="Bain" width={120}  height={60}/>
+                    <Logos src={bain} alt="Bain" width={120}  height={50}/>
 
 
 

@@ -41,6 +41,13 @@ const HeadingSubtitle = styled.div`
     padding-bottom: 40px;
     height: auto; 
     min-width: 250px;
+
+    @media only screen and (max-width: 400px) {
+        // width: 350px;
+        // height: 300px;
+        text-align: center;
+        // border: solid red;
+    }
 `
 
 const PictureContainer = styled.div`

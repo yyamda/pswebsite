@@ -145,6 +145,12 @@ const placements = [
             year: "Sophomore"
         },
         {
+            name: "Angela Zhang",
+            company: "AdRoll",
+            title: "Brand Marketing Intern",
+            year: "Sophomore"
+        },
+        {
             name: "Shashaank Joshi",
             company: "Walmart",
             title: "Product Manager Intern",

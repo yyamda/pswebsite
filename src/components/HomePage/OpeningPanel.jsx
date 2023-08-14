@@ -2,6 +2,11 @@ import styled from 'styled-components'
 import HomePG from '../images/HomeBG.png'
 import { Link } from 'react-router-dom'
 
+
+const handleLinkClick = () => {
+    window.scrollTo(0, 1200);
+  };
+
 const Panel = styled.div`
     width: 100%;
     height: 600px;
@@ -86,6 +91,7 @@ const ApplyButton = styled(Link)`
 
     border: none;
     text-decoration: none;
+    margin-bottom: 20px;
 
 
     display: flex;
@@ -112,9 +118,19 @@ const VideoContainer = styled.div`
 
 
 `
-const Video = styled.div`
-
+const Subtitle = styled.div`
+    color: #EB5B8D;
+    font-size: 18px;
+    // font-weight: 500;
+    text-decoration: none;
 `
+
+const ALink = styled(Link)`
+    font-weight: 700;
+    text-decoration: none;
+`
+
+
 function OpeningPanel() {
     return (
         <Panel>
@@ -122,6 +138,11 @@ function OpeningPanel() {
             <HeadingTitle> Product Space @ Berkeley</HeadingTitle>
             <HeadingSubtitle> UC Berkeley Product Management Organization</HeadingSubtitle>
             <ApplyButton to="../Apply"> Apply </ApplyButton>
+            <Subtitle> *Applications open 8/28 (Mon) </Subtitle>
+            <ALink to="../About" onClick={handleLinkClick}>
+                <Subtitle> *Coffee chat our members here!</Subtitle>
+            </ALink>
+
         </OpeningHeader>
         <VideoContainer>
             {/* <Video> Video</Video> */}

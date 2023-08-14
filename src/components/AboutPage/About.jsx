@@ -22,7 +22,7 @@ function About() {
             <Navbar/>
             <AboutPanel/>
             <Values/>
-            <Leadership/>
+            <Leadership id="coffee_chats"/>
             <BeyondPS/>
             <Footer />
         </Container>

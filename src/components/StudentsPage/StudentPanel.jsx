@@ -62,7 +62,7 @@ const HeadingSubtitle = styled.div`
         width: 350px;
         height: 300px;
         text-align: center;
-        border: solid red;
+        // border: solid red;
     }
 
 `
