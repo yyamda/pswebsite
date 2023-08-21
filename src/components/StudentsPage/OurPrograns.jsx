@@ -1,12 +1,13 @@
 import styled from "styled-components"
-import Fellowship from "../images/fellowship.png"
-import Client from "../images/client.png"
+import FA22Fellowship from "../images/pictures/fa2022fellowship.png"
+import Client from "../images/pictures/client.png"
 
 
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 
     // border: solid blue;
 
@@ -46,7 +47,7 @@ const ProgramText = styled.div`
 
 const Image = styled.img`
     width: 550px;
-    height: 300px;
+    height: 400px;
 
 
     // border: solid black;
@@ -130,25 +131,25 @@ function OurPrograms() {
                         like-minded people and get a head start in your career.
                     </Description>
                 </ProgramText>
-                <Image src={Fellowship}/>
+                <Image src={FA22Fellowship}/>
             </ProgramContainer>
             <ProgramContainer>
+                <Image src={Client}/>
                 <ProgramText>
                     <Title> Client</Title>
                     <Description>
-                    If you already have previous product management experience
-                    (i.e. internship or previously a member of our fellowship
-                    program), you can apply your learnings in a real-world setting
-                    as a product associate for a client project. Throughout the
-                    semester, you’ll be working under an experienced project
-                        manager to devise impactful features and products for 
-                        companies in various stages and industries. From talking 
-                        with stakeholders to conducting user research, the client 
-                        projects will provide you with invaluable experience for 
-                        your growth as a product manager.
+                    In addition to the fellowship program, members are grouped 
+                    into a client project to build real-world experience and 
+                    apply their learnings as a product associate for a Fortune 500 
+                    company. Throughout the semester, you’ll be working under an 
+                    experienced project manager to devise impactful features and products for 
+                    companies in various stages and industries. From talking 
+                    with stakeholders to conducting user research, the client 
+                    projects will provide you with invaluable experience for 
+                    your growth as a product manager.
                     </Description>
                 </ProgramText>
-                <Image src={Client}/>
+                
 
             </ProgramContainer>
 

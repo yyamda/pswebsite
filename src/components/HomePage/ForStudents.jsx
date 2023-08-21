@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import HomeStudents from "../images/HomeStudents.png"
+import AdvaitLineage from "../images/pictures/advaitlineage.png"
 import { Link } from "react-router-dom"
 
 const handleLinkClick = () => {
@@ -33,7 +33,7 @@ const PictureBox = styled.img`
     align-items: center;
     justify-content: center;
     width: 500px;
-
+    margin-right: 25px;
 
     // border: solid blue;
     @media only screen and (max-width: 900px) {
@@ -88,7 +88,7 @@ const Button = styled(Link)`
 function ForStudents() {
     return (
         <Container> 
-            <PictureBox src={HomeStudents} /> 
+            <PictureBox src={AdvaitLineage} /> 
             <Box>
                 <Title> FOR STUDENTS</Title>
                 <Description> 

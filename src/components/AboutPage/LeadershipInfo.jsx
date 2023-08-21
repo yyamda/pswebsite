@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import linkedinIcon from "../images/linkedinIcon.png"
+import linkedinIcon from "../images/company/linkedinIcon.png"
 
 const Container = styled.div`
     width: 215px;

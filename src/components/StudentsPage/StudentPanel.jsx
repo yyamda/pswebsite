@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import StudentsBG from '../images/StudentsBG.png'
-import HomePG from '../images/HomeBG.png'
+import HomePG from '../images/pictures/HomeBG.png'
+import StudentPanelPic from '../images/pictures/StudentsPanelPic.png'
 
 const Panel = styled.div`
-    width: 100%;
-    height: 600px;
+    min-height: 650px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 
     background: url(${HomePG});
@@ -28,13 +28,13 @@ const Panel = styled.div`
 
 `
 const OpeningHeader = styled.div`
-    width: 45%; 
+    width: 500px;; 
     height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding-left: 90px;
+    // padding-left: 90px;
 
     @media only screen and (max-width: 400px) {
         display: flex; 
@@ -68,18 +68,36 @@ const HeadingSubtitle = styled.div`
 `
 const PictureContainer = styled.div`
     height: auto;
-    width: 700px;
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 
     // border: solid black;
 
-    @media only screen and (max-width: 1500px) {
+
+    animation: Appear 0.5s ease-in-out 0.5s both;
+
+    @keyframes Appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
         display: none;
     }
 
 `
 const PictureBox = styled.img`
-    width: 780px;
-    height: 500px;
+    width: 700px;
+    height: 550px;
 
 `;
 
@@ -87,21 +105,21 @@ const PictureBox = styled.img`
 function StudentPanel() {
     return (
         <Panel>
-        <OpeningHeader>
-            <HeadingTitle> Curricula</HeadingTitle>
-            <HeadingSubtitle> 
-            At Product Space, we invest a lot of our energies
-             into creating educational programs that are relevant,
-              high-impact, and full of insights into product management. 
-              From tackling interviews to performing case studies on
-               real-world issues, our members have made remarkable achievements
-                putting what they’ve learned at Product Space into their
-                 internships and beyond.
-            </HeadingSubtitle>
-        </OpeningHeader>
-        <PictureContainer> 
-            <PictureBox src={StudentsBG} />
-        </PictureContainer>
+            <OpeningHeader>
+                <HeadingTitle> Curricula</HeadingTitle>
+                <HeadingSubtitle> 
+                At Product Space, we invest a lot of our energies
+                into creating educational programs that are relevant,
+                high-impact, and full of insights into product management. 
+                From tackling interviews to performing case studies on
+                real-world issues, our members have made remarkable achievements
+                    putting what they’ve learned at Product Space into their
+                    internships and beyond.
+                </HeadingSubtitle>
+            </OpeningHeader>
+            <PictureContainer> 
+                <PictureBox src={StudentPanelPic} />
+            </PictureContainer>
         </Panel>
 
     )

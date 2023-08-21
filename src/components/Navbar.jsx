@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import HomeLogo from './images/psHomeLogo.png'
-import hamburgerIcon from './images/hamburgerIcon.png'
+import HomeLogo from './images/miscicons/psHomeLogo.png'
+import hamburgerIcon from './images/miscicons/hamburgerIcon.png'
 import React, { useState } from 'react'
 
 const Container = styled.div`

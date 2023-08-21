@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
-import HomePG from '../images/HomeBG.png'
+import HomePG from '../images/pictures/HomeBG.png'
 
 const Container = styled.div`
     display: flex; 

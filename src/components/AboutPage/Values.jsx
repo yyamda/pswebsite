@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Icon1 from '../images/AboutIcon1.png'
-import Icon2 from '../images/AboutIcon2.png'
-import Icon3 from '../images/AboutIcon3.png'
+import Icon1 from '../images/miscicons/AboutIcon1.png'
+import Icon2 from '../images/miscicons/AboutIcon2.png'
+import Icon3 from '../images/miscicons/AboutIcon3.png'
 
 
 const Container = styled.div`

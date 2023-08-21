@@ -1,14 +1,16 @@
 import styled from 'styled-components'
-import CompanyBG from '../images/CompanyBG.png'
-import HomePG from '../images/HomeBG.png'
+import HomePG from '../images/pictures/HomeBG.png'
+import CompanyPanelPic from '../images/pictures/CompanyPanelPic.png'
 
 
 
 const Container = styled.div`
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-around; 
+    align-items: center;
     flex-wrap: wrap;
     padding-bottom: 80px;
+    padding-top: 20px;
     height: auto;
 
     background: url(${HomePG});
@@ -17,6 +19,7 @@ const Container = styled.div`
     background-attachment: fixed;
 
     // border: solid black;
+
     @media only screen and (max-width: 400px) {
 
      }
@@ -25,13 +28,13 @@ const Container = styled.div`
 const TextContainer = styled.div`
     font-size: 20px;
     display: flex; 
-    margin-left: 150px;
-    margin-top: 120px;
+    // margin-left: 80px;
+    // margin-top: 120px;
     flex-direction: column; 
 
     gap: 40px;
     height: auto;
-    width: 500px;
+    width: 500pxpictures/;
 
     // border: solid black;
 
@@ -57,6 +60,7 @@ const Header = styled.div`
 `
 const Description = styled.div`
     font-size: 22px;
+    width: 500px;
     min-width: 330px;
 
     @media only screen and (max-width: 400px) {
@@ -73,7 +77,7 @@ const Button = styled.div`
     font-weight: 800;
     border-radius: 25px;
     color: white; 
-    background-image: linear-gradient(to bottom, #EB5B8D, #ED7472);
+    background-image: linear-gradient(to bottom, #8A549F, #BFA2C8);
     text-align: left;
 
     width: 300px;
@@ -90,15 +94,32 @@ const PictureContainer = styled.div`
     height: auto;
     width: 700px;
 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+
     // border: solid black;
-    @media only screen and (max-width: 1400px) {
+
+    animation: Appear 0.5s ease-in-out 0.5s both;
+
+    @keyframes Appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
        display: none;
     }
 
 `
 const PictureBox = styled.img`
-    width: 780px;
-    height: 500px;
+    width: 800px;
+    height: 575px;
 
 `;
 
@@ -119,7 +140,7 @@ function CompanyPanel() {
                 </Button>
             </TextContainer>
             <PictureContainer> 
-                <PictureBox src={CompanyBG} />
+                <PictureBox src={CompanyPanelPic} />
             </PictureContainer>
             
 

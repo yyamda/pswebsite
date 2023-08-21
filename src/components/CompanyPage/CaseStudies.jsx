@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import hubspot from "../images/hubspot2.png"
-import amex from "../images/amex.png"
-import box from "../images/box.png"
-import edmodo from "../images/edmodo.png"
-import bartleby from "../images/bartleby.png"
-import sega from "../images/sega.png"
-import atsign from "../images/atsign.png"
+import hubspot from "../images/company/hubspot2.png"
+import amex from "../images/company/amex.png"
+import box from "../images/company/box.png"
+import edmodo from "../images/company/edmodo.png"
+import bartleby from "../images/company/bartleby.png"
+import sega from "../images/company/sega.png"
+import atsign from "../images/company/atsign.png"
 
 
 

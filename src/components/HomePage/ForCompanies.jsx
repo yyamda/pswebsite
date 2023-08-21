@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import HomeCompanies from "../images/HomeClient.png"
+import sp23Board from "../images/pictures/sp23board.jpg"
 import { Link } from 'react-router-dom';
 
 
@@ -11,6 +11,7 @@ const Container = styled.div`
     display: flex; 
     justify-content: space-around;
     padding-bottom: 70px;
+    padding-top: 70px;
 
     // border: solid black;
 `
@@ -67,7 +68,9 @@ const PictureBox = styled.img`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 700px;
+    height: 480px;
+    margin-left: 25px;
 
     @media only screen and (max-width: 900px) {
         display: none;
@@ -91,7 +94,7 @@ function ForCompanies() {
             </Description2>
             <Button to="/Companies" onClick={handleLinkClick}> Learn More </Button>
         </Box>
-        <PictureBox src={HomeCompanies} />
+        <PictureBox src={sp23Board} />
     </Container>
     )
 };

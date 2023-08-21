@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import HomeMember from "../images/HomeMember.png"
+import sp23leadership from "../images/pictures/sp23leadership.jpg"
 import { Link } from 'react-router-dom';
 
 
@@ -7,6 +7,7 @@ const Container = styled.div`
     display: flex; 
     justify-content: space-around;
     padding-bottom: 40px;
+    padding-top: 60px;
 
     // border: solid black;
 `
@@ -33,7 +34,9 @@ const PictureBox = styled.img`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 800px;
+    height: 500px;
+    margin-right: 20px;
 
     @media only screen and (max-width: 900px) {
         display: none;
@@ -78,7 +81,7 @@ const Button = styled(Link)`
 function Membership() {
     return (
         <Container> 
-            <PictureBox src={HomeMember} /> 
+            <PictureBox src={sp23leadership} /> 
             <Box>
                 <Title> MEMBERSHIP</Title>
                 <Description> 

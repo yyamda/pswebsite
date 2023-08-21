@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import HomePG from '../images/HomeBG.png'
+import HomePG from '../images/pictures/HomeBG.png'
 import { Link } from 'react-router-dom'
 
 
@@ -37,6 +37,7 @@ const OpeningHeader = styled.div`
     justify-content: center;
     gap: 10px;
     padding-left: 90px;
+    padding-top: 30px;
 
     // border: solid yellow;
 
@@ -99,6 +100,7 @@ const ApplyButton = styled(Link)`
     align-items: center;
 
     @media only screen and (max-width: 400px) {
+        height: 60px;
         width: 90px;
         display: flex; 
         text-align: center;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import ApplyBG from '../images/applyBG.png'
-import HomePG from '../images/HomeBG.png'
+import ApplyBG from '../images/pictures/applyBG.png'
+import HomePG from '../images/pictures/HomeBG.png'
 import { Link } from "react-router-dom"
 
 
@@ -129,9 +129,9 @@ function ApplyPanel() {
 
                 <MoreInfo>
                     <Subtitle> *Applications open 8/28 (Mon). </Subtitle>
-                    <Subtitle> You can find us tabling on campus, coffee chat our members, or attend our recruitment events! </Subtitle>
+                    <Subtitle> For more information, come find us tabling on campus, sign up to coffee chat a member, or attend our recruitment events!</Subtitle>
                     <ALink to="../About" onClick={handleLinkClick}>
-                        <Subtitle> *Sign up for coffee chats here</Subtitle>
+                        <Subtitle> *Click here to sign up for coffee chats</Subtitle>
                     </ALink>
                 </MoreInfo>
             </HeadingSubtitle>

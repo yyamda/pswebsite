@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 
 const Container = styled.div`
@@ -13,6 +14,7 @@ const Header = styled.div`
     color: #EB5B8D;
     font-size: 24px;
     font-weight: 500;
+    padding-left: 140px;
 `
 
 const Table = styled.div`
@@ -61,7 +63,9 @@ const DateText = styled.div`
 const InfoRow = styled.div`
     display: flex; 
     flex-direction: column;
-    height: 200px;
+    
+    min-height: 200px;
+    height: auto;
     padding-left: 30px;
     border-bottom: solid #DEDEDE; 
     border-bottom-width: 1px;
@@ -115,9 +119,34 @@ const RowLocation = styled.div`
     margin-bottom: 5px;
 
     // border: solid blue; 
-
-
 `
+
+const Subtitle = styled.div`
+    color: #EB5B8D;
+    font-size: 18px;
+    // font-weight: 500;
+    text-decoration: none;
+
+    margin-top: 10px;
+    width: 400px;
+
+    @media only screen and (max-width: 400px) {
+        width: 250px;
+        text-align: center;
+        // border: solid red;
+    }
+`
+
+const ALink = styled(Link)`
+    font-weight: 700;
+    text-decoration: none;
+`
+
+
+
+const handleLinkClick = () => {
+    window.scrollTo(0, 1200);
+  };
 
 
 function Timeline() {
@@ -132,9 +161,11 @@ function Timeline() {
                     <InfoRow> 
                         <RowTitle> Tabling & Coffee Chats Open </RowTitle>
                         <RowDescription>
-                            Sign up for coffee chats with members at
-                            Product Space and get 
-                            a head start on the application! 
+                            Find us tabling at Sproul or sign up for coffee chats with members at
+                            Product Space to learn more about the club! 
+                            <ALink to="../About" onClick={handleLinkClick}>
+                                <Subtitle> *Click here to sign up for coffee chats</Subtitle>
+                            </ALink>
                         </RowDescription>
                     </InfoRow>
                 </Row>
@@ -155,7 +186,7 @@ function Timeline() {
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Info Session (8 - 10 PM PT) </RowTitle>
-                        <RowLocation> Location: TBD</RowLocation>
+                        <RowLocation> Location: Latimer 120</RowLocation>
                         <RowDescription>
                             Join us to get a glimpse into the way we do 
                             things at Product Space @ Berkeley.
@@ -168,12 +199,14 @@ function Timeline() {
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> PS Case Workshop (8 - 10 PM PT) </RowTitle>
-                        <RowLocation> Location TBD </RowLocation>
+                        <RowLocation> Location: Latimer 120 </RowLocation>
                         <RowDescription>
                         Whether you're completely new to PM or experienced, 
                         the Intro to PM workshop—led by a senior PS member—is 
-                        an excellent way to see how we go about teaching product
-                         management.
+                        an excellent way to be introduced to product
+                        management. We will also go over a popular product 
+                        case interview framework that we recommend to use 
+                        for our Final Round Interview!
                         </RowDescription>
                     </InfoRow>
                 </Row>
@@ -190,7 +223,7 @@ function Timeline() {
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/3 (Mon) - 9/4 (Tues) </DateText>
+                        <DateText> 9/3 (Sun) - 9/4 (Mon) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> 1st Round Interviews (invite only)</RowTitle>
@@ -202,7 +235,7 @@ function Timeline() {
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/5 (Wed) - 9/6 (Thurs) </DateText>
+                        <DateText> 9/5 (Tues) - 9/6 (Wed) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Final Round Interviews (invite only)</RowTitle>
@@ -213,7 +246,7 @@ function Timeline() {
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/6 (Thurs) </DateText>
+                        <DateText> 9/6 (Wed) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Social Night (7-9PM PT) (invite only)</RowTitle>

@@ -7,7 +7,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     // border: solid black;
 
 `
@@ -99,7 +99,7 @@ function PSDescription() {
                     <NumDesc>Full Time Placement</NumDesc>
                 </NumContainer>
                 <NumContainer>
-                    <Number> 6</Number>
+                    <Number> 8</Number>
                     <NumDesc>Active Semesters</NumDesc>
                 </NumContainer>
             </NumbersGroup>

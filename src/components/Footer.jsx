@@ -1,7 +1,7 @@
 // import {Text } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import HomeLogo from './images/psHomeLogo.png'
+import HomeLogo from './images/miscicons/psHomeLogo.png'
 
 const handleLinkClick = () => {
     window.scrollTo(0, 0);

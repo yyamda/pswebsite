@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import icon1 from '../images/CompanyIcon1.png'
-import icon2 from '../images/CompanyIcon2.png'
-import icon3 from '../images/CompanyIcon3.png'
+import icon1 from '../images/miscicons/CompanyIcon1.png'
+import icon2 from '../images/miscicons/CompanyIcon2.png'
+import icon3 from '../images/miscicons/CompanyIcon3.png'
 
 const Container = styled.div`
     display: flex; 
@@ -77,7 +77,7 @@ const Card = styled.div`
     // border: dotted gray;
 
     &:hover {
-        box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.1);
+        box-shadow: 0 0 20px 10px rgba(176, 102, 211, 0.3);
         transition: box-shadow 0.3s ease;
       }
 

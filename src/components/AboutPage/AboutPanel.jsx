@@ -1,15 +1,17 @@
 import styled from 'styled-components'
-import HomePG from '../images/HomeBG.png'
-import PSPicture1 from '../images/AboutBG.png'
-import MaskBlob from '../images/blob.svg'
+import HomePG from '../images/pictures/HomeBG.png'
+import sp23Fellowship from '../images/pictures/fa22fellowship.png'
+import AboutPanelPic from '../images/pictures/AboutPanelPic.png'
 
 
 
 const Panel = styled.div`
     width: 100%;
+    min-height: 700px;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     top: 0;
     // margin-top: 70px;
@@ -26,13 +28,13 @@ const Panel = styled.div`
     // border: solid black; 
 `
 const OpeningHeader = styled.div`
-    width: 45%; 
+    width: 600px; 
     height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding-left: 90px;
+    // padding-left: 90px;
     align-items: flex-start;
 
     // border: solid yellow;
@@ -60,7 +62,7 @@ const HeadingTitle = styled.div`
 `
 
 const HeadingSubtitle = styled.div`
-    font-size: 26px;
+    font-size: 22px;
     padding-bottom: 40px;
     min-width: 350px;
 
@@ -77,37 +79,47 @@ const HeadingSubtitle = styled.div`
 
 const PictureContainer = styled.div`
     height: auto;
+    display: flex;
+    align-items: center;
+    
+    animation: Appear 0.5s ease-in-out 0.5s both;
 
-    @media only screen and (max-width: 1400px) {
-        display: none;
+    @keyframes Appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
+
     // border: solid black;
 
 `
 const PictureBox = styled.img`
-    width: 680px;
-    height: 420px;
+    width: 800px;
+    height: 620px;
 
 `;
 
 function AboutPanel() {
     return (
         <Panel>
-        <OpeningHeader>
-            <HeadingTitle> Mission</HeadingTitle>
-            <HeadingSubtitle> 
-            At Product Space, our mission is to help undergraduate 
-            students nurture the skills demanded in this field so 
-            they can thrive as product leaders and help others who are
-             interested in product management. To accomplish this, we
-              continue to build a strong, engaged community of future 
-              product managers who are excited to embark on their product 
-              journey and desire to give back as much as they take.
-            </HeadingSubtitle>
-        </OpeningHeader>
-        <PictureContainer> 
-            <PictureBox src={PSPicture1} />
-        </PictureContainer>
+            <OpeningHeader>
+                <HeadingTitle> Mission</HeadingTitle>
+                <HeadingSubtitle> 
+                At Product Space, our mission is to help undergraduate 
+                students nurture the skills demanded in this field so 
+                they can thrive as product leaders and help others who are
+                interested in product management. To accomplish this, we
+                continue to build a strong, engaged community of future 
+                product managers who are excited to embark on their product 
+                journey and desire to give back as much as they take.
+                </HeadingSubtitle>
+            </OpeningHeader>
+            <PictureContainer> 
+                <PictureBox src={AboutPanelPic} />
+            </PictureContainer>
 
     </Panel>
 

@@ -6,7 +6,7 @@ import PSDescription from './PSDescription'
 import ForStudents from './ForStudents'
 import ForCompanies from './ForCompanies'
 import Membership from './Membership'
-import HomePG from '../images/HomeBG.png'
+import HomePG from '../images/pictures/HomeBG.png'
 
 const Container = styled.div`
 
