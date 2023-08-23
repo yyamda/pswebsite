@@ -22,7 +22,7 @@ const Box = styled.div`
 
     // border: solid blue;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         justify-content: center;
         align-items: center;
     }
@@ -46,7 +46,7 @@ const Title = styled.h3`
     color: #EB5B8D;
     font-size: 24px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         text-align: center;
     }
 `
@@ -56,7 +56,7 @@ const Description = styled.h1`
     font-size: 34px;
     font-weight: 450;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         text-align: center;
     }
 `
@@ -66,7 +66,7 @@ const Description2 = styled.h2`
     font-size: 20;
     font-weight: normal;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         text-align: center;
         width: 350px;
     }

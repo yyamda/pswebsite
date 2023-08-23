@@ -10,9 +10,10 @@ const handleLinkClick = () => {
 
 const Container = styled.div`
     width: 100%;
-    height: 600px;
+    height: auto;
     background-image: radial-gradient(circle at 1px 1px, #bdbab9 2px, transparent 0);
     background-size: 30px 30px;
+    
 
     display: flex;
     justify-content: center;

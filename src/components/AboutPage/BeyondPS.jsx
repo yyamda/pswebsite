@@ -34,7 +34,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: none;
 
     }
@@ -91,7 +91,7 @@ const LogoContainerBeta = styled.div`
         max-width: 1000px;
         width: auto;
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: none;
 
     }

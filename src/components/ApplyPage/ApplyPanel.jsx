@@ -18,7 +18,7 @@ const Panel = styled.div`
     background-attachment: fixed;
 
 
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: 450px){
         display: flex; 
         justify-content: center;
         align-items: center;
@@ -26,7 +26,7 @@ const Panel = styled.div`
     // border: solid black; 
 `
 const OpeningHeader = styled.div`
-    width: 45%; 
+    width: auto; 
     height: 300px;
     
     display: flex;
@@ -38,7 +38,7 @@ const OpeningHeader = styled.div`
 
     // border: solid yellow;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: flex; 
         flex-direction: column;
         justify-content: center;
@@ -55,7 +55,7 @@ const HeadingTitle = styled.div`
     font-size: 60px;
     padding-bottom: 20px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         margin-top: 30px;
         text-align: center;
 
@@ -75,7 +75,7 @@ const HeadingSubtitle = styled.div`
     flex-direction: column;
     min-height: 0; /* Allow content to expand vertically */
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 250px;
         text-align: center;
         // border: solid red;
@@ -92,7 +92,7 @@ const Subtitle = styled.div`
     margin-top: 10px;
     width: 400px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 250px;
         text-align: center;
         // border: solid red;
@@ -163,13 +163,6 @@ function ApplyPanel() {
                 to apply. Join us and shape your product journey! 
                 </HeadingInfo>
 
-                {/* <MoreInfo>
-                    <Subtitle> *Applications open 8/28 (Mon). </Subtitle>
-                    <Subtitle> For more information, come find us tabling on campus, sign up to coffee chat a member, or attend our recruitment events!</Subtitle>
-                    <ALink to="../About" onClick={handleLinkClick}>
-                        <Subtitle> *Click here to sign up for coffee chats</Subtitle>
-                    </ALink>
-                </MoreInfo> */}
             </HeadingSubtitle>
 
             

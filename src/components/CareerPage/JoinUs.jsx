@@ -31,7 +31,7 @@ const TextContainer = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         padding-left: 50px;
         padding-right: 50px;
         margin-right: 0px;

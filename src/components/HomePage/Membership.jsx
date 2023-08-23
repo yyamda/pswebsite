@@ -20,7 +20,7 @@ const Box = styled.div`
 
     // border: solid blue;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 70%;
         display: flex;
         justify-content: center;

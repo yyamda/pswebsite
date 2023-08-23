@@ -71,7 +71,7 @@ const Number = styled.div`
 `
 const NumDesc = styled.div`
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         text-align: center;
         line-height: 1.2;
 

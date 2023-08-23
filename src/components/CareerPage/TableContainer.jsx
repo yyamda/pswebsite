@@ -86,7 +86,7 @@ const HeaderTitle = styled.div`
         width: 200px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: none;
     }
 
@@ -128,7 +128,7 @@ const Title = styled.div`
         width: 200px;
     }
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: none;
     }
 `

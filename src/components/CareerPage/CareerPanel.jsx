@@ -32,6 +32,11 @@ const OpeningHeader = styled.div`
     // padding-left: 90px;
 
     // border: solid yellow;
+
+    @media only screen and (max-width: 450px) {
+        align-items: center;
+        width: 300px;
+    }
 `
 
 const HeadingTitle = styled.div`
@@ -46,7 +51,7 @@ const HeadingSubtitle = styled.div`
     height: auto; 
     min-width: 250px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         // width: 350px;
         // height: 300px;
         text-align: center;
@@ -81,7 +86,7 @@ const PictureContainer = styled.div`
         }
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: none;
     }
 

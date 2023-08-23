@@ -30,14 +30,18 @@ const Panel = styled.div`
     background-attachment: fixed;
 
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: flex; 
         flex-direction: column;
-        width: 300px;
+        width: 80%;
         text-align: center;
         justify-content: center;
+        padding-left: 35px;
+
 
     }
+    // border: solid yellow;
+    
 `
 const OpeningHeader = styled.div`
     width: auto; 
@@ -50,7 +54,7 @@ const OpeningHeader = styled.div`
 
     // border: solid yellow;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 70%;
         justify-content: center;
         align-items: center;
@@ -66,7 +70,7 @@ const HeadingTitle = styled.div`
     font-size: 60px;
     font-weight: 450;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 190px;
         display: flex; 
 
@@ -74,7 +78,6 @@ const HeadingTitle = styled.div`
 
         // border: solid black;
     }
-
 `
 
 const HeadingSubtitle = styled.div`
@@ -83,7 +86,7 @@ const HeadingSubtitle = styled.div`
     padding-bottom: 40px;
     width: 520px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 230px;
         display: flex; 
         text-align: center;
@@ -110,7 +113,7 @@ const ApplyButton = styled(Link)`
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         height: 60px;
         width: 90px;
         display: flex; 
@@ -138,6 +141,11 @@ const ALink = styled(Link)`
 const PSLogo = styled.img`
     width: 660px;
     height: 180px;
+
+    @media only screen and (max-width: 700px) {
+        width: 350px;
+        height: 90px;
+     }
 
 `;
 

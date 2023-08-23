@@ -13,7 +13,7 @@ const Container = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
      }
 `
 
@@ -26,7 +26,7 @@ const TextContainer = styled.div`
     padding-bottom: 40px;
 
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 300px;
 
      }
@@ -57,7 +57,7 @@ const CardContainer = styled.div`
         margin-bottom: 50px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -88,7 +88,7 @@ const Card = styled.div`
         // border: solid red;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 300px;
         height: 500px;
         // border: solid red;

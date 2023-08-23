@@ -38,7 +38,7 @@ const ProgramText = styled.div`
 
         // border: solid blue;
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 300px;
 
         // border: solid black;
@@ -58,7 +58,7 @@ const Image = styled.img`
         height: 350px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 300px;
         height: 200px;
     }
@@ -81,7 +81,7 @@ const Title = styled.div`
     padding-bottom: 10px;
     padding-left: 50px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         text-align: center;
         padding-right: 40px;
     }
@@ -96,7 +96,7 @@ const Description = styled.div`
         width: 500px;
         // border: solid black;
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         padding-left: 20px;
         text-align: center;
         width: 250px;

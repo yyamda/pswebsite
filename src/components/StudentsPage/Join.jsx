@@ -15,7 +15,7 @@ const Container = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 100%;
         padding-left: 30px;
 

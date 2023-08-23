@@ -15,7 +15,7 @@ const Container = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         margin-left: 400px;
      }
 `
@@ -33,7 +33,7 @@ const TextContainer = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 500px;
         height: 300px;
      }
@@ -52,7 +52,7 @@ const Description = styled.div`
     text-align: center;
     line-height: 1.5;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 230px;
      }
 

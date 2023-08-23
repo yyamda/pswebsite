@@ -14,19 +14,26 @@ const Header = styled.div`
     color: #EB5B8D;
     font-size: 24px;
     font-weight: 500;
-    padding-left: 450px;
-    padding-bottom: 50px;
+    // padding-left: 450px;
+    // padding-bottom: 50px;
 `
 
 const Table = styled.div`
     margin-top: 45px;
     height: auto;
     width: 70%;
+    
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    // align-items: center;
+    
 
     // border: solid black; 
 
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: auto
     }
 `
@@ -44,7 +51,7 @@ const DateRow = styled.div`
     width: 200px;
 
     // border: solid black;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         margin-right: 15px;
         width: 100px;
     }
@@ -85,7 +92,7 @@ const InfoRow = styled.div`
     @media only screen and (max-width: 1000px) {
         height: auto;
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 200px;
     }
 `
@@ -129,10 +136,10 @@ const Subtitle = styled.div`
     text-decoration: none;
 
     margin-top: 10px;
-    width: 400px;
+    // width: 400px;
 
-    @media only screen and (max-width: 400px) {
-        width: 250px;
+    @media only screen and (max-width: 450px) {
+        width: auto;
         text-align: center;
         // border: solid red;
     }
@@ -154,8 +161,8 @@ function Timeline() {
     return(
         <Container> 
             
+            <Header> TIMELINE FOR FALL 2023 </Header>
             <Table>
-                <Header> TIMELINE FOR FALL 2023 </Header>
                 <Row> 
                     <DateRow>
                         <DateText> 8/23 (Wed) - 9/1 (Fri) </DateText>

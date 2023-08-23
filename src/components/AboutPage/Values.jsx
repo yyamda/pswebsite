@@ -14,7 +14,7 @@ const Container = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
 
     }
 `
@@ -29,7 +29,7 @@ const TextContainer = styled.div`
 
     // border: solid blue; 
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: flex;
         width: 75%;
         margin-bottom: 50px;
@@ -43,7 +43,7 @@ const Title = styled.h3`
     font-weight: 500;
     font-size: 30px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         text-align: center;
 
     }
@@ -75,7 +75,7 @@ const CardContainer = styled.div`
         align-items: center;
 
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 350px;
         height: auto;
         flex-direction: column;
@@ -101,7 +101,7 @@ const Card = styled.div`
     box-shadow: 0 0 20px 10px rgba(90, 179, 220, 0.3); /* Modify the box-shadow on hover for a stronger glowing effect */
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         // border: solid red;
 
     }

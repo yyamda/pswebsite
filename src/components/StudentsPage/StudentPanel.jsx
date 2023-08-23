@@ -16,9 +16,8 @@ const Panel = styled.div`
 
     // border: solid black; 
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 100%;
-        padding-left: 25px;
 
         // border: solid black;
 
@@ -36,7 +35,7 @@ const OpeningHeader = styled.div`
     gap: 10px;
     // padding-left: 90px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: flex; 
         align-items: center;
 
@@ -58,7 +57,7 @@ const HeadingSubtitle = styled.div`
     padding-bottom: 40px;
     min-width: 350px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 350px;
         height: 300px;
         text-align: center;
@@ -89,7 +88,7 @@ const PictureContainer = styled.div`
             opacity: 1;
         }
     }
-    
+
     @media only screen and (max-width: 600px) {
         display: none;
     }

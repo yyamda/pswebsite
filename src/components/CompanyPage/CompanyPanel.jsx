@@ -20,7 +20,7 @@ const Container = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
 
      }
 `
@@ -38,7 +38,7 @@ const TextContainer = styled.div`
 
     // border: solid black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
 
         display: flex; 
         align-items: center;
@@ -50,7 +50,7 @@ const TextContainer = styled.div`
 const Header = styled.div`
     font-size: 60px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 300px;
         text-align: center;
 
@@ -63,7 +63,7 @@ const Description = styled.div`
     width: 500px;
     min-width: 330px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 330px;
         text-align: center;
 
@@ -111,7 +111,7 @@ const PictureContainer = styled.div`
             opacity: 1;
         }
     }
-    
+
     @media only screen and (max-width: 700px) {
        display: none;
     }

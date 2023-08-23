@@ -128,6 +128,11 @@ const Subtitle = styled.div`
     width: 480px;
 
     // border: solid red;
+
+    @media only screen and (max-width: 450px) {
+        width: 80%;
+
+    }
 `
 
 const Headers = styled.div`
@@ -138,6 +143,11 @@ const Headers = styled.div`
     align-items: center;
 
     // border: solid blue;
+
+    @media only screen and (max-width: 450px) {
+        width: 80%;
+
+    }
 `
 
 

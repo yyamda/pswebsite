@@ -21,7 +21,7 @@ const Panel = styled.div`
     background-position: top;
     background-attachment: fixed;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         margin-bottom: 100px;
     }
 
@@ -40,15 +40,15 @@ const OpeningHeader = styled.div`
     // border: solid yellow;
 
 
-    @media only screen and (max-width: 400px) {
-        width: 70%;
+    @media only screen and (max-width: 450px) {
+        width: 80%;
         text-align: center;
         display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 60px;
-        padding-top: 150px;
+        // padding-left: 60px;
+        padding-top: 50px;
         // flex-wrap: wrap;
     }
 `
@@ -69,7 +69,7 @@ const HeadingSubtitle = styled.div`
     // border: solid blue;
 
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         height: 600px;
         
         // border: solid black;
@@ -91,6 +91,11 @@ const PictureContainer = styled.div`
         to {
             opacity: 1;
         }
+    }
+
+    @media only screen and (max-width: 450px) {
+        display: none;
+
     }
 
     // border: solid black;

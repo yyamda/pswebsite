@@ -18,7 +18,7 @@ const Container = styled.div`
     padding-top: 100px;
     padding-bottom: 70px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         display: none;
      }
 `
