@@ -20,7 +20,6 @@ function Companies() {
             <CompanyPanel/>
             <Benefits/>
             <CaseStudies/>
-            <WorkWithUs/>
             <Footer/>
         </Container>
     )

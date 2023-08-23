@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import CareerPanelPic from '../images/pictures/CareerPanelPic.png'
 import HomePG from '../images/pictures/HomeBG.png'
+import yutalineage from '../images/pictures/yutalineage.jpg'
+import truonglineage from '../images/pictures/truonglineage.jpg'
+import tialineage from '../images/pictures/tialineage.jpg'
 
 
 const Panel = styled.div`
@@ -26,7 +29,7 @@ const OpeningHeader = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding-left: 90px;
+    // padding-left: 90px;
 
     // border: solid yellow;
 `
@@ -53,11 +56,17 @@ const HeadingSubtitle = styled.div`
 
 const PictureContainer = styled.div`
     height: auto;
-    width: 700px;
+    width: 600px;
 
     display: flex; 
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     // border: solid black; 
 
@@ -77,9 +86,14 @@ const PictureContainer = styled.div`
     }
 
 `
-const PictureBox = styled.img`
-    width: 680px;
-    height: 430px;
+const HPictureBox = styled.img`
+    width: 450px;
+    height: 300px;
+
+`;
+const VPictureBox = styled.img`
+    width: 220px;
+    height: 300px;
 
 `;
 
@@ -91,14 +105,17 @@ function CareerPanel() {
                 <HeadingSubtitle> 
                 Product Space represents a significant proportion 
                 of associate product managers from UC Berkeley. 
-                From Google to Reddit to Twitter, 17 APM and PM 
+                From Google to Reddit to Twitter, 20+ APM and PM 
                 programs have had Product Space members as an intern 
                 or full-timer. We've compiled our members' career 
                 placement for 2023 below.
                 </HeadingSubtitle>
             </OpeningHeader>
-            <PictureContainer> 
-                <PictureBox src={CareerPanelPic} />
+            <PictureContainer>
+                
+                <HPictureBox src={yutalineage} />
+                <VPictureBox src={tialineage}/> 
+                <VPictureBox src={truonglineage}/> 
             </PictureContainer>
 
         </Panel>

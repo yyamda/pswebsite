@@ -125,7 +125,7 @@ const Subtitle = styled.div`
     
     margin-bottom: 30px; 
     // padding-left: 100px;
-    width: 400px;
+    width: 480px;
 
     // border: solid red;
 `
@@ -147,7 +147,9 @@ function Leadership() {
        <Container> 
             <Headers>
                 <HeadingText> LEADERSHIP</HeadingText>
-                <Subtitle> Hover over the cards for more info!</Subtitle>
+                <Subtitle> Hover over the cards to sign up for coffee chats and to learn more about our leadership!</Subtitle>
+                <Subtitle> Note* -  number of coffee chats are limited to 2 per person</Subtitle>
+                    
             </Headers>
             <LeadersContainer> 
                 <LeaderCard>
@@ -192,7 +194,7 @@ function Leadership() {
                         <LeadershipInfo fullname="Krish Kumar" position="VP of Development" grade="Junior" 
                         major="Computer Science" hobbies="Basketball, photography, dining experience, video games"
                         email="krishkumar@berkeley.edu" linkedin="https://www.linkedin.com/in/krishh-kumar/"
-                        calendlylink="https://calendly.com/"/>
+                        calendlylink="https://calendly.com/krishkumar-1/krish-coffee-chat"/>
                     </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>
@@ -210,7 +212,7 @@ function Leadership() {
                         <LeadershipInfo fullname="Garrett Chau" position="Fellowship Mentor" grade="Senior" 
                         major="Business, Data Science" hobbies="Mechanical Keyboards, Cars, Chipotle, Gym"
                         email="gchau@berkeley.edu" linkedin="https://www.linkedin.com/in/garrett-chau/"
-                        calendlylink="https://calendly.com/gchau/ps_coffee_chat"/>
+                        calendlylink="https://calendly.com/gchau/garrett-club-coffee-chats"/>
                     </LeaderInfo>
                 </LeaderCard>
                 <LeaderCard>

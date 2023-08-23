@@ -18,7 +18,6 @@ function Careers() {
             <Navbar/>
             <CareerPanel/>
             <TableContainer />
-            <JoinUs /> 
             <Footer/>
         </Container>
     )

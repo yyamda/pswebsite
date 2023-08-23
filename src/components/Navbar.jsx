@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import HomeLogo from './images/miscicons/psHomeLogo.png'
+import PSLogo from './images/miscicons/PSLogo.png'
 import hamburgerIcon from './images/miscicons/hamburgerIcon.png'
 import React, { useState } from 'react'
 
@@ -12,7 +12,7 @@ const Container = styled.div`
     height: 70px;
     display: flex; 
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     background: #FFFDFD;
     opacity: 0.95;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2); 
@@ -64,13 +64,12 @@ const ANavLink = styled(NavLink)`
     @media only screen and (max-width: 400px) {
         // border: solid black;
     }
-
 `;
 
 
 const HomeIcon = styled.img`
     height: 50px;
-    margin-left: 30px;
+    margin-left: 15px; 
 
     // border: solid red;
 `
@@ -84,7 +83,9 @@ const ItemContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding: 20px;
+
+
+  // border: solid black;
 
   @media only screen and (max-width: 780px) {
     display: none;
@@ -172,7 +173,7 @@ function Navbar() {
     <Container>
         <HomeContainer>
           <NavLink to="/Home" >
-            <HomeIcon src={HomeLogo} alt='ImageNotLoading'/>
+            <HomeIcon src={PSLogo} alt='ImageNotLoading'/>
           </NavLink>
         </HomeContainer>
         <ItemContainer>

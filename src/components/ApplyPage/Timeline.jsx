@@ -14,7 +14,8 @@ const Header = styled.div`
     color: #EB5B8D;
     font-size: 24px;
     font-weight: 500;
-    padding-left: 140px;
+    padding-left: 450px;
+    padding-bottom: 50px;
 `
 
 const Table = styled.div`
@@ -152,8 +153,9 @@ const handleLinkClick = () => {
 function Timeline() {
     return(
         <Container> 
-            <Header> TIMELINE FOR FALL 2023 </Header>
+            
             <Table>
+                <Header> TIMELINE FOR FALL 2023 </Header>
                 <Row> 
                     <DateRow>
                         <DateText> 8/23 (Wed) - 9/1 (Fri) </DateText>
@@ -182,7 +184,7 @@ function Timeline() {
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 8/30 (Wed)</DateText>
+                        <DateText> 8/29 (Tues)</DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Info Session (8 - 10 PM PT) </RowTitle>

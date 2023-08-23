@@ -21,7 +21,6 @@ function Students() {
             <Navbar/>
             <StudentPanel/>
             <OurPrograms/>
-            <Join/>
             <Footer/>
         </Container>
     )

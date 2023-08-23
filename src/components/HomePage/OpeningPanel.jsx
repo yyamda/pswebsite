@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 import HomePG from '../images/pictures/HomeBG.png'
 import { Link } from 'react-router-dom'
+import { useState, useEffect} from 'react'
+import psHomeLogo from '../images/miscicons/psHomeLogo.png'
+import CompanyPanelPic from '../images/pictures/CompanyPanelPic.png'
+import digHealth from '../images/pictures/sp23dighealth.jpg'
+import psbasketball from '../images/pictures/sp23basketball.jpg'
+import allclubformal from '../images/pictures/sp23allclubformal.png'
+import calday from '../images/pictures/caldaysp23.png'
 
 
 const handleLinkClick = () => {
@@ -9,10 +16,13 @@ const handleLinkClick = () => {
 
 const Panel = styled.div`
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+
+    padding-bottom: 60px;
 
     background: url(${HomePG});
     background-size: cover;
@@ -30,13 +40,12 @@ const Panel = styled.div`
     }
 `
 const OpeningHeader = styled.div`
-    width: 30%; 
+    width: auto; 
     height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding-left: 90px;
     padding-top: 30px;
 
     // border: solid yellow;
@@ -72,6 +81,7 @@ const HeadingSubtitle = styled.div`
     font-size: 25px;
     color: #656565;
     padding-bottom: 40px;
+    width: 520px;
 
     @media only screen and (max-width: 400px) {
         width: 230px;
@@ -83,12 +93,13 @@ const HeadingSubtitle = styled.div`
 
 const ApplyButton = styled(Link)`
     height: 60px;
-    width: 90px;
+    width: 150px;
+
     font-size: 16px;
     font-weight: 700;
     border-radius: 25px;
     color: white; 
-    background-image: linear-gradient(to bottom, #EB5B8D, #ED7472);
+    background-image: linear-gradient(to bottom, #DD7977, #DA668C);
 
     border: none;
     text-decoration: none;
@@ -107,49 +118,110 @@ const ApplyButton = styled(Link)`
         // border: solid black;
     }
 `
-const VideoContainer = styled.div`
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 500px;
-    // border: solid black;
 
-    @media only screen and (max-width: 400px) {
-        display: none;
-    }
-
-
-`
 const Subtitle = styled.div`
     color: #EB5B8D;
     font-size: 18px;
     // font-weight: 500;
-    text-decoration: none;
+    // text-decoration: none;
+    width: 330px;
+    border-bottom: solid #EB5B8D;
 `
 
 const ALink = styled(Link)`
     font-weight: 700;
     text-decoration: none;
+
+    
 `
 
+const PSLogo = styled.img`
+    width: 660px;
+    height: 180px;
+
+`;
+
+const PictureContainer = styled.div`
+    height: 600px;
+    width: 700px;
+
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+
+    // border: solid black;
+
+    animation: Appear 0.5s ease-in-out 0.5s both;
+
+    @keyframes Appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+       display: none;
+    }
+
+`
+const PictureBox = styled.img`
+    width: auto;
+    max-height: 500px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+
+`;
 
 function OpeningPanel() {
+
+    const images = [allclubformal, digHealth, calday];
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+        // Calculate the next image index
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        setCurrentImageIndex(nextIndex);
+        }, 2500); // 2.5 seconds in milliseconds
+
+        return () => {
+        // Clear the interval when the component unmounts
+        clearInterval(interval);
+        };
+    }, [currentImageIndex, images.length]);
+
+
     return (
         <Panel>
-        <OpeningHeader>
-            <HeadingTitle> Product Space @ Berkeley</HeadingTitle>
-            <HeadingSubtitle> UC Berkeley Product Management Organization</HeadingSubtitle>
-            <ApplyButton to="../Apply"> Apply </ApplyButton>
-            <Subtitle> *Applications open 8/28 (Mon) </Subtitle>
-            <ALink to="../About" onClick={handleLinkClick}>
-                <Subtitle> *Coffee chat our members here!</Subtitle>
-            </ALink>
+            <OpeningHeader>
+                {/* <HeadingTitle> Product Space @ Berkeley</HeadingTitle> */}
+                <PSLogo src={psHomeLogo} />
+                <HeadingSubtitle> UC Berkeley Product Management Organization</HeadingSubtitle>
+                <ApplyButton to="../Apply"> Apply Now</ApplyButton>
+                <ALink to="../About" onClick={handleLinkClick}>
+                    <Subtitle> *Click Here to sign up for coffee chats</Subtitle>
+                </ALink>
 
-        </OpeningHeader>
-        <VideoContainer>
-            {/* <Video> Video</Video> */}
-        </VideoContainer>
-    </Panel>
+            </OpeningHeader>
+            <PictureContainer> 
+            {images.map((image, index) => (
+                <PictureBox
+                    key={index}
+                    src={image}
+                    style={{
+                    opacity: currentImageIndex === index ? 1 : 0, // Control opacity
+                    transition: 'opacity 1s ease-in-out', // Add CSS transition
+                    }}
+                />
+            ))}
+            </PictureContainer>
+        </Panel>
 
     )
 }
