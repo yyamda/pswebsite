@@ -23,7 +23,7 @@ const TabBar = styled.div`
 
 const InfoContainer = styled.div`
     width: 190px; 
-    height: 230px; 
+    height: 150px; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -55,7 +55,7 @@ const Position = styled.div`
     height: 40px;
     margin-top: 10px;
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 
     display: flex; 
@@ -84,54 +84,8 @@ const SubInfoContainer = styled.div`
     background-color: #B3C2F8;
     // border: solid black;
 `
-
-const Hobbies = styled.div`
-    padding-top: 10px;
-    padding-left: 15px;
-    width: 230px;
-    font-size: 14px;
-
-
-    // border: solid black;
-`
-const Email = styled.div`
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-`
-const LinkContainer = styled.div`
-    width: 180px;
-    display: flex; 
-    padding-bottom: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    // border: solid black;
-`
-const LinkedIn = styled.a`
-    margin-left: 5px;
-
-    // border: solid yellow;
-`
-
-const CoffeeChat = styled.a`
-    width: 120px;
-    height: 40px; 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: #D9D9D9;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-    // border: solid blue;
-`
-
-
 function LeadershipInfo(props) {
-    const { fullname, position, grade, major, hobbies, email, linkedin, calendlylink} = props;
+    const { fullname, position, grade, major} = props;
     return (
         <Container>
             <TabBar/>
@@ -141,23 +95,6 @@ function LeadershipInfo(props) {
                 <SubInfoContainer>
                 {"> " + grade + "\n" + "> " + major} 
                 </SubInfoContainer>
-                <Hobbies> 
-                    {"Hobbies: " + hobbies} 
-                </Hobbies>
-                <Email>
-                    {email}
-                </Email>
-                <LinkContainer>
-                    {linkedin ? (
-                        <LinkedIn href={linkedin} target="_blank" rel="noopener noreferrer">
-                        <img src={linkedinIcon} alt="LinkedIn" width="40" height="35"/>
-                    </LinkedIn>
-                    ) : null}
-                    <CoffeeChat calendlylinkhref={calendlylink} target="_blank" rel="noopener noreferrer">
-                        Coffee Chat Me! 
-                    </CoffeeChat>
-                
-                </LinkContainer>
             </InfoContainer>
         </Container>
     )

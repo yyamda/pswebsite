@@ -10,6 +10,7 @@ const Panel = styled.div`
     height: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 
     background: url(${HomePG});
@@ -147,12 +148,32 @@ const PictureBox = styled.img`
 
 `;
 
+const ApplicationButton = styled.button`
+    font-size: 24px;
+    color: #EB5B8D;
+    border: solid #EB5B8D 3px;
+    border-radius: 15px;
+    background: none;
+    width: 250px;
+    height: auto;
+
+    margin-top: 40px;
+
+    &:hover {
+        cursor: pointer;
+    } 
+`
+
 const handleLinkClick = () => {
     window.scrollTo(0, 1200);
   };
 
 
 function ApplyPanel() {
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+      };
+
     return (
         <Panel>
         <OpeningHeader>
@@ -162,6 +183,10 @@ function ApplyPanel() {
                 Product Space welcomes anyone with a passion for PM 
                 to apply. Join us and shape your product journey! 
                 </HeadingInfo>
+                <ApplicationButton  role="link"
+                onClick={() => openInNewTab("https://forms.gle/USwup7Xfoqh8tazD6")}>
+                    Start Application
+                </ApplicationButton>
 
             </HeadingSubtitle>
 

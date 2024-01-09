@@ -127,6 +127,12 @@ const placements = [
             year: "Sophomore"
         },
         {
+            name: "Truong Nguyen",
+            company: "DICK's Sporting Goods",
+            title: "Product Manager Intern",
+            year: "Sophomore"
+        },
+        {
             name: "Yuta Yamada",
             company: "Blizzard Entertainment",
             title: "Product Manager Intern",

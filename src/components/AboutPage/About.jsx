@@ -5,6 +5,7 @@ import AboutPanel from './AboutPanel'
 import Values from './Values'
 import Leadership from './Leadership'
 import BeyondPS from './BeyondPS'
+import SeniorAdvisors from './SeniorAdvisor'
 
 
 const Container = styled.div`
@@ -23,6 +24,7 @@ function About() {
             <AboutPanel/>
             <Values/>
             <Leadership id="coffee_chats"/>
+            <SeniorAdvisors />
             <BeyondPS/>
             <Footer />
         </Container>

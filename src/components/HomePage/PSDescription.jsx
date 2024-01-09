@@ -99,7 +99,7 @@ function PSDescription() {
                     <NumDesc>Full Time Placement</NumDesc>
                 </NumContainer>
                 <NumContainer>
-                    <Number> 8</Number>
+                    <Number> 9</Number>
                     <NumDesc>Active Semesters</NumDesc>
                 </NumContainer>
             </NumbersGroup>

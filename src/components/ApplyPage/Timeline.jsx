@@ -150,6 +150,25 @@ const ALink = styled(Link)`
     text-decoration: none;
 `
 
+const ApplicationButton = styled.button`
+    font-size: 20px;
+    color: #EB5B8D;
+    border: solid #EB5B8D 3px;
+    border-radius: 15px;
+    background: none;
+    width: 250px;
+    height: auto;
+
+
+    &:hover {
+        cursor: pointer;
+    } 
+
+    @media only screen and (max-width: 600px) {
+        width: auto;
+
+    }
+`
 
 
 const handleLinkClick = () => {
@@ -158,6 +177,11 @@ const handleLinkClick = () => {
 
 
 function Timeline() {
+
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+      };
+      
     return(
         <Container> 
             
@@ -180,13 +204,15 @@ function Timeline() {
                 </Row>
                 <Row>
                     <DateRow>
-                        <DateText> 8/28 (Mon) </DateText>
+                        <DateText> 8/23 (Wed) </DateText>
                     </DateRow> 
                     <InfoRow> 
                         <RowTitle> Applications Open </RowTitle>
-                        <RowDescription>
-                            Application form will be linked above!
-                        </RowDescription>
+                        <ApplicationButton
+                        role="link"
+                        onClick={() => openInNewTab("https://forms.gle/USwup7Xfoqh8tazD6")}>
+                            Start Application
+                        </ApplicationButton>
                     </InfoRow>
                 </Row>
                 <Row> 
