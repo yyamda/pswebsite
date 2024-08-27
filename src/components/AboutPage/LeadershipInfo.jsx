@@ -34,14 +34,15 @@ const InfoContainer = styled.div`
 
 const FullName = styled.div`
     width: 170px; 
-    height: 40px; 
+    height: 50px; 
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 10px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    text-align: center;
 
     font-size: 18px;
     font-weight: 800;
@@ -49,6 +50,8 @@ const FullName = styled.div`
 
     background-color: #6F358E;
     color: white; 
+
+    // border: solid 3px black;
 `
 
 const Position = styled.div`
@@ -153,7 +156,7 @@ function LeadershipInfo(props) {
                         <img src={linkedinIcon} alt="LinkedIn" width="40" height="35"/>
                     </LinkedIn>
                     ) : null}
-                    <CoffeeChat calendlylinkhref={calendlylink} target="_blank" rel="noopener noreferrer">
+                    <CoffeeChat href={calendlylink} target="_blank" rel="noopener noreferrer">
                         Coffee Chat Me! 
                     </CoffeeChat>
                 

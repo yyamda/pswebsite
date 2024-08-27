@@ -8,6 +8,7 @@ import digHealth from '../images/pictures/sp23dighealth.jpg'
 import psbasketball from '../images/pictures/sp23basketball.jpg'
 import allclubformal from '../images/pictures/sp23allclubformal.png'
 import calday from '../images/pictures/caldaysp23.png'
+import sp24fellows from '../images/pictures/sp24fellowship.JPG'
 
 
 const handleLinkClick = () => {
@@ -188,7 +189,7 @@ const PictureBox = styled.img`
 
 function OpeningPanel() {
 
-    const images = [allclubformal, digHealth, calday];
+    const images = [allclubformal, sp24fellows, digHealth, calday];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {

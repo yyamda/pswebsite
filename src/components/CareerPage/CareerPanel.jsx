@@ -113,7 +113,7 @@ function CareerPanel() {
                 From Google to Reddit to Twitter, 20+ APM and PM 
                 programs have had Product Space members as an intern 
                 or full-timer. We've compiled our members' career 
-                placement for 2023 below.
+                placement for 2024 below.
                 </HeadingSubtitle>
             </OpeningHeader>
             <PictureContainer>

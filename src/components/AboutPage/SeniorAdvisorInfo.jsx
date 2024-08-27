@@ -3,41 +3,30 @@ import linkedinIcon from "../images/company/linkedinIcon.png"
 
 const Container = styled.div`
     width: 215px;
-    height: 370px; 
-
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 
     // border: solid blue; 
-`
-const TabBar = styled.div`
-    width: 50px; 
-    height: 4px; 
-    background-color: #D9D9D9;
-
-    // border: solid black;
 `
 
 const InfoContainer = styled.div`
     width: 190px; 
-    height: 150px; 
+    height: 60px; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
 
-    // background-color: #F0F0F0; 
+    gap: 5px;
 
+    // background-color: #F0F0F0; 
 `
 
 const FullName = styled.div`
     width: 170px; 
     height: 40px; 
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 10px;
 
     display: flex;
     justify-content: center;
@@ -53,51 +42,27 @@ const FullName = styled.div`
 
 const Position = styled.div`
     height: 40px;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     text-align: center;
 
     display: flex; 
     justify-content: center; 
     align-items: center;
 
-    font-weight: 500;
 
 `
 
-const SubInfoContainer = styled.div`
-    width: 190px; 
-    border-radius: 5px;
-
-    font-size: 14px;
-    gap: 10px;
-
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-
-    white-space: pre-line; 
-
-    background-color: #B3C2F8;
-    // border: solid black;
-`
-function LeadershipInfo(props) {
-    const { fullname, position, grade, major} = props;
+function SeniorAdvisorInfo(props) {
+    const { fullname, position} = props;
     return (
         <Container>
-            <TabBar/>
             <InfoContainer>
                 <FullName>{fullname}</FullName>
                 <Position> {position}</Position>
-                <SubInfoContainer>
-                {"> " + grade + "\n" + "> " + major} 
-                </SubInfoContainer>
             </InfoContainer>
         </Container>
     )
 }
 
-export default LeadershipInfo; 
+export default SeniorAdvisorInfo; 

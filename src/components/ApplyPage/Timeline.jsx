@@ -185,11 +185,11 @@ function Timeline() {
     return(
         <Container> 
             
-            <Header> TIMELINE FOR FALL 2023 </Header>
+            <Header> TIMELINE FOR FALL 2024 </Header>
             <Table>
                 <Row> 
                     <DateRow>
-                        <DateText> 8/23 (Wed) - 9/1 (Fri) </DateText>
+                        <DateText> 8/28 (Wed) - 9/5 (Thurs)</DateText>
                     </DateRow> 
                     <InfoRow> 
                         <RowTitle> Tabling & Coffee Chats Open </RowTitle>
@@ -204,24 +204,24 @@ function Timeline() {
                 </Row>
                 <Row>
                     <DateRow>
-                        <DateText> 8/23 (Wed) </DateText>
+                        <DateText> 8/30 (Fri) </DateText>
                     </DateRow> 
                     <InfoRow> 
                         <RowTitle> Applications Open </RowTitle>
                         <ApplicationButton
                         role="link"
-                        onClick={() => openInNewTab("https://forms.gle/USwup7Xfoqh8tazD6")}>
+                        onClick={() => openInNewTab("https://docs.google.com/forms/d/e/1FAIpQLSfb8HSYnon8dmtBfMp0Kgk7wWX4HF139PLhNvve99T_sDcnZw/viewform")}>
                             Start Application
                         </ApplicationButton>
                     </InfoRow>
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 8/29 (Tues)</DateText>
+                        <DateText> 9/3 (Tues) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Info Session (8 - 10 PM PT) </RowTitle>
-                        <RowLocation> Location: Latimer 120</RowLocation>
+                        <RowLocation> Location: TBD</RowLocation>
                         <RowDescription>
                             Join us to get a glimpse into the way we do 
                             things at Product Space @ Berkeley.
@@ -230,61 +230,62 @@ function Timeline() {
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 8/31 (Thurs)</DateText>
+                        <DateText> 9/5 (Thurs) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> PS Case Workshop (8 - 10 PM PT) </RowTitle>
-                        <RowLocation> Location: Latimer 120 </RowLocation>
+                        <RowLocation> Location: TBD</RowLocation>
                         <RowDescription>
                         Whether you're completely new to PM or experienced, 
                         the Intro to PM workshop—led by a senior PS member—is 
                         an excellent way to be introduced to product
                         management. We will also go over a popular product 
                         case interview framework that we recommend to use 
-                        for our Final Round Interview!
+                        for our first round of interviews!
                         </RowDescription>
                     </InfoRow>
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/1 (Fri) </DateText>
+                        <DateText> 9/6 (Fri) </DateText>
                     </DateRow>
                     <InfoRow> 
-                        <RowTitle> Applications Close! (12AM Midnight)  </RowTitle>
+                        <RowTitle> Applications Close! (8PM PST)  </RowTitle>
                         <RowDescription>
-                        Submit your Product Space application by midnight Pacific Time on this date!
+                        Submit your Product Space application by 8pm Pacific Time on this date!
                         </RowDescription>
                     </InfoRow>
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/3 (Sun) - 9/4 (Mon) </DateText>
+                        <DateText> 9/8 (Sun) - 9/9 (Mon) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> 1st Round Interviews (invite only)</RowTitle>
                         <RowDescription>
-                        We'll cover a couple of behavioral question to learn 
-                        more about you and your interest in Product Space.
+                        We'll cover a couple of behavioral questions and a product design
+                         question to learn more about you and your interest in Product Space.
                         </RowDescription>
                     </InfoRow>
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/5 (Tues) - 9/6 (Wed) </DateText>
+                        <DateText> 9/11 (Wed) </DateText>
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Final Round Interviews (invite only)</RowTitle>
                         <RowDescription>
-                        We'll ask you to walk us through a product design question.
+                        The final step will be a presentation on a prompt we will 
+                        provide to you ahead of time to see how you might fit into our club.
                         </RowDescription>
                     </InfoRow>
                 </Row>
                 <Row> 
                     <DateRow>
-                        <DateText> 9/6 (Wed) </DateText>
+                        <DateText> 9/11 (Wed) </DateText>
                     </DateRow>
                     <InfoRow> 
-                        <RowTitle> Social Night (7-9PM PT) (invite only)</RowTitle>
+                        <RowTitle> Social Night (6-8PM PT) (invite only)</RowTitle>
                         <RowDescription>
                         Meet all of us in Product Space at our social night!
                         </RowDescription>

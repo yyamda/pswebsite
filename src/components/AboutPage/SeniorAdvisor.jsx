@@ -1,25 +1,69 @@
 import styled from "styled-components"
-import LeadershipInfo from "./LeadershipInfo"
 import SeniorAdvisorInfo from "./SeniorAdvisorInfo"
+import memberInfo from "../AboutPage/MemberInfo"
 import jordan from "../images/people/jordan.png"
-import yuta from "../images/people/yuta.png"
-import hana from "../images/people/hana.png"
-import geetanjali from "../images/people/geetanjali.png"
-import krish from "../images/people/krish.png"
-import raymond from "../images/people/raymond.png"
-import lucas from "../images/people/lucas.png"
-import angela from "../images/people/angela.png"
-import anisa from "../images/people/anisa.png"
 import shannon from "../images/people/shannon.png"
 import tyler from "../images/people/tyler.png"
 import garrett from "../images/people/garrett.png"
 import cady from "../images/people/cady.png"
-import michelle from "../images/people/michelle.png"
-import wesley from "../images/people/wesley.png"
+import kayden from "../images/people/kaydenfu.png"
 import truong from "../images/people/truong.png"
-import lauren from "../images/people/lauren.png"
+import hannah from "../images/people/hannahli.png"
+import tia from "../images/people/tiachang.png"
+import ryansun from "../images/people/ryansun.png"
+import raymond from "../images/people/raymond.png"
+import hana from "../images/people/hana.png"
+import geetanjali from "../images/people/geetanjali.png"
+import lucas from "../images/people/lucas.png"
+import maya from "../images/people/mayahaylock.png"
+import advait from "../images/people/advaitmarathe.png"
+import katherine from "../images/people/katherinegan.png"
+import arnav from "../images/people/arnavgupta.png"
+import jerry from "../images/people/jerryzhang.png"
+import sahil from "../images/people/sahilmehta.png"
+import vignesh from "../images/people/vigneshsiva.png"
+import brandon from "../images/people/brandonqin.png"
+import justin from "../images/people/justinquan.png"
+import aadhrik from "../images/people/aadhrikkuila.png"
+import kayli from "../images/people/kaylijiang.png"
+import prashant from "../images/people/prashantmalyala.png"
+import ismail from "../images/people/ismailazam.png"
+import lily from "../images/people/lilyli.png"
+import atharva from "../images/people/atharvamehendale.png"
 
 
+const imageMap = {
+
+    "hanamcnierney": hana,
+    "lucasomori": lucas,
+    "raymondfeng": raymond,
+    "geetanjalijain": geetanjali,
+    "jordanyee": jordan,
+    "garrettchau": garrett,
+    "cadyhsu": cady,
+    "truongnguyen": truong,
+    "shannonor": shannon,
+    "kaydenfu": kayden,
+    "hannahli": hannah,
+    "tiachang": tia,
+    "ryansun": ryansun,
+    "tylermcnierney": tyler,
+    "mayahaylock": maya,
+    "advaitmarathe": advait,
+    "katherinegan": katherine,
+    "arnavgupta": arnav,
+    "jerryzhang": jerry,
+    "sahilmehta": sahil,
+    "vigneshsiva": vignesh,
+    "brandonqin": brandon,
+    "justinquan": justin,
+    "aadhrikkuila": aadhrik,
+    "kaylijiang": kayli,
+    "prashantmalyala": prashant,
+    "ismailazam": ismail,
+    "lilyli": lily,
+    "atharvamehendale": atharva
+}
 
 
 const Container = styled.div`
@@ -36,7 +80,7 @@ const Container = styled.div`
 `
 
 
-const LeadersContainer = styled.div`
+const SeniorContainer = styled.div`
     width: 80%;
     height: auto;
     align-content: flex-start;
@@ -48,60 +92,30 @@ const LeadersContainer = styled.div`
 
     // border: black solid;
 `
-const LeaderImage = styled.img`
-    // NOTE!!!! Frame radio: 1 (width) to 1.46 (height)
-    width: 225px;
-    height: 305px; 
+const SeniorImage = styled.img`
+    width: 190px;
+    height: 225px; 
     border-radius: 10px;
     margin-top: 10px;
     padding-bottom: 10px;
     transition: filter 0.5s;
-    
 
+    object-fit: cover;
+    object-position: center;
     
     // border: solid black;
 `
-const LeaderInfo = styled.div`
-    width: 250px;
-    height: 500px;
-    position: absolute;
-    overflow: hidden;
-    margin-top: 330px;
-    
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    
-    transition: margin-top 0.5s;
-    background-color: white;
-    opacity: 0.95;
-    border-radius: 10px;
 
-    // border: solid purple;
-`
-
-const LeaderCard = styled.div`
-    width: 280px;
-    height: 430px; 
+const SeniorCard = styled.div`
+    width: 215px;
+    height: 350px; 
     position: relative;
     background: #F9D4DF;
     border-radius: 10px;
     
-    overflow: hidden; 
     display: flex; 
     flex-direction: column;
     align-items: center;
-
-
-    &:hover ${LeaderInfo} {
-        margin-top: 100px;
-      }
-
-    &:hover ${LeaderImage} {
-        filter: blur(2px);
-    }
-    
-    padding-top: 10px;
 
     // border: solid blue;
 `
@@ -116,24 +130,6 @@ const HeadingText = styled.h2`
 
     // border: solid black;
 
-`
-
-const Subtitle = styled.div`
-    color: #EB5B8D;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    
-    margin-bottom: 30px; 
-    // padding-left: 100px;
-    width: 480px;
-
-    // border: solid red;
-
-    @media only screen and (max-width: 450px) {
-        width: 80%;
-
-    }
 `
 
 const Headers = styled.div`
@@ -160,68 +156,14 @@ function SeniorAdvisors() {
                 <HeadingText> SENIOR ADVISORS & ALUMNI</HeadingText>
                     
             </Headers>
-            <LeadersContainer> 
-                <LeaderCard>
-                    <LeaderImage src={jordan} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Jordan Yee" position="President FA '23" grade="Senior" 
-                        major="EECS"/>
-                    </LeaderInfo>
-                </LeaderCard>
-                <LeaderCard>
-                    <LeaderImage src={yuta} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Yuta Yamada" position="VP Fellowship FA '23" grade="Junior" 
-                        major="Computer Science, Data Science"/>
-                    </LeaderInfo>
-                </LeaderCard>
-
-                <LeaderCard>
-                    <LeaderImage src={michelle} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Michelle Lee" position="Fellowship Mentor FA '23" grade="Junior" 
-                        major="Business, Data Science" />
-                    </LeaderInfo>
-                </LeaderCard>
-                <LeaderCard>
-                    <LeaderImage src={garrett} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Garrett Chau" position="Fellowship Mentor FA '23" grade="Senior" 
-                        major="Business, Data Science" />
-                    </LeaderInfo>
-                </LeaderCard>
-                <LeaderCard>
-                    <LeaderImage src={cady} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Cady Hsu" position="Fellowship Mentor FA '23" grade="Junior" 
-                        major="Data Science, Economics " />
-                    </LeaderInfo>
-                </LeaderCard>
-                
-                <LeaderCard>
-                    <LeaderImage src={truong} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Truong Nguyen" position="Project Manager FA '23" grade="Junior" 
-                        major="Computer Science, Business"/>
-                    </LeaderInfo>
-                </LeaderCard>
-                <LeaderCard>
-                    <LeaderImage src={shannon} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Shannon Or" position="Project Manager FA '23" grade="Junior" 
-                        major="EECS" />
-                    </LeaderInfo>
-                </LeaderCard>
-                
-                <LeaderCard>
-                    <LeaderImage src={wesley} alt="leader " /> 
-                    <LeaderInfo> 
-                        <SeniorAdvisorInfo fullname="Wesley Griggs" position="Project Manager FA '23" grade="Junior" 
-                        major="Data Science, Cognitive Science"/>
-                    </LeaderInfo>
-                </LeaderCard>
-
-            </LeadersContainer>
+            <SeniorContainer> 
+                {memberInfo.senior_advisors.map((senior_advisor) => (
+                    <SeniorCard>
+                        <SeniorImage src={imageMap[senior_advisor.imagekey]} alt="senior advisor" /> 
+                        <SeniorAdvisorInfo fullname={senior_advisor.fullname} position={senior_advisor.position} grade={senior_advisor.grade} major={senior_advisor.major}/>
+                    </SeniorCard>
+                ))}
+            </SeniorContainer>
        </Container>
     )
 }

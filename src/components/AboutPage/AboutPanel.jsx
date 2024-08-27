@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import HomePG from '../images/pictures/HomeBG.png'
 import sp23Fellowship from '../images/pictures/fa22fellowship.png'
 import AboutPanelPic from '../images/pictures/AboutPanelPic.png'
-
-
+import fa23banquet from "../images/pictures/fa23banquetfellowship.png"
+import fa23retreatfellows from "../images/pictures/fa23retreatfellows.png"
 
 const Panel = styled.div`
     width: 100%;
@@ -101,9 +101,53 @@ const PictureContainer = styled.div`
     // border: solid black;
 
 `
-const PictureBox = styled.img`
-    width: 800px;
+
+const AboutPanelPicContainer = styled.div`
+    // height: auto;
+    // width: 800px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    // border: solid black; 
+
+    animation: Appear 0.5s ease-in-out 0.5s both;
+    @keyframes Appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        display: none;
+    }
+
+`
+const AboutHPictureBox = styled.img`
+    width: 650px;
+    height: 460px;
+
+    object-fit: cover;
+    object-position: center;
+
+`;
+const AboutVPictureBox = styled.img`
+    width: 410px;
     height: 620px;
+
+    object-fit: cover;
+    object-position: center;
+    
 
 `;
 
@@ -122,9 +166,10 @@ function AboutPanel() {
                 journey and desire to give back as much as they take.
                 </HeadingSubtitle>
             </OpeningHeader>
-            <PictureContainer> 
-                <PictureBox src={AboutPanelPic} />
-            </PictureContainer>
+            <AboutPanelPicContainer>
+                <AboutVPictureBox src={fa23retreatfellows}/>
+                <AboutHPictureBox src={fa23banquet} />
+            </AboutPanelPicContainer>
 
     </Panel>
 

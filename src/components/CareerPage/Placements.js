@@ -1,5 +1,221 @@
 const placements = [
     {
+        timeline: "2024 FULL TIME PLACEMENT",
+        data: [
+            {
+                name: "Kayden Fu",
+                company: "Salesforce",
+                title: "Associate Product Manager",
+                year: "Senior"
+            },
+            {
+                name: "Michelle Nguyen",
+                company: "Salesforce",
+                title: "Associate Product Manager",
+                year: "Senior"
+            },
+            {
+                name: "Jordan Yee",
+                company: "LinkedIn",
+                title: "Associate Product Manager",
+                year: "Senior"
+            },
+            {
+                name: "Hannah Li",
+                company: "ServiceNow",
+                title: "Associate Product Manager",
+                year: "Senior"
+            },
+            {
+                name: "Tia Chang",
+                company: "Databricks",
+                title: "Associate Product Manager",
+                year: "Senior"
+            },
+            {
+                name: "Tsadiku Obolu",
+                company: "Google",
+                title: "Associate Product Manager",
+                year: "Senior"
+            },
+            {
+                name: "Crystal Chang",
+                company: "Stripe",
+                title: "Software Engineer",
+                year: "Senior"
+            }
+        ]
+    },
+    {
+        timeline: "2024 INTERNSHIP PLACEMENT", 
+        data: [
+        {
+            name: "Lucas Omori",
+            company: "Mastercard",
+            title: "Associate Product Specialist Intern",
+            year: "Junior"
+        },
+        {
+            name: "Raymond Feng",
+            company: "Mastercard",
+            title: "Product Management Intern",
+            year: "Junior"
+
+        },
+        {
+            name: "Hana McNierney",
+            company: "Salesforce",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+
+        },
+        {
+            name: "Shashaank Joshi",
+            company: "Salesforce",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+
+        },
+        {
+            name: "Michelle Lee",
+            company: "Salesforce",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+        },
+        {
+            name: "Truong Nguyen",
+            company: "Atlassian",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+        },
+        {
+            name: "Cady Hsu",
+            company: "Atlassian",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+
+        },
+        {
+            name: "Christine Wong",
+            company: "Coinbase",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+
+        },
+        {
+            name: "Oscar Chow",
+            company: "Coinbase",
+            title: "Associate Product Management Intern",
+            year: "Junior"
+
+        },
+        {
+            name: "Yuta Yamada",
+            company: "Sony",
+            title: "Software Engineer Intern",
+            year: "Junior"
+        },
+        {
+            name: "Su Lee",
+            company: "Pitney Bowes",
+            title: "Product Management Intern",
+            year: "Junior"
+        },
+        {
+            name: "Lauren Sung",
+            company: "Pando Electric",
+            title: "Product Marketing Intern",
+            year: "Junior"
+        },
+        {
+            name: "Geetanjali Jain",
+            company: "Blackstone",
+            title: "Product Management Intern",
+            year: "Junior"
+        },
+        {
+            name: "Krish Kumar",
+            company: "MongoDB",
+            title: "Product Management Intern",
+            year: "Junior"
+        },
+        {
+            name: "Wesley Griggs",
+            company: "Comcast",
+            title: "Product Management Intern",
+            year: "Junior"
+        },
+        {
+            name: "Anthony Tafoya",
+            company: "Space X",
+            title: "Software Engineer Intern",
+            year: "Sophomore"
+        },
+        {
+            name: "Anisa Majhi",
+            company: "Microsoft",
+            title: "Product Management Intern",
+            year: "Sophomore"
+
+        },
+        {
+            name: "Vicky Xiao",
+            company: "American Express",
+            title: "Product Intern",
+            year: "Sophomore"
+
+        },
+        {
+            name: "Dasang Dolma",
+            company: "Amazon",
+            title: "Business Analyst Intern",
+            year: "Sophomore"
+        },
+        {
+            name: "Melanie Hsiang",
+            company: "Amazon",
+            title: "Program Management Intern",
+            year: "Sophomore"
+        },
+        {
+            name: "Marissa Jensen",
+            company: "Plug and Play Tech Center",
+            title: "Ventures & Programs Intern ",
+            year: "Sophomore"
+        },
+        {
+            name: "Anna Cheng",
+            company: "Capital One",
+            title: "Business Analyst Intern ",
+            year: "Sophomore"
+        },
+        {
+            name: "Andy Wei",
+            company: "Nike",
+            title: "Product Management Intern",
+            year: "Sophomore"
+        },
+        {
+            name: "Ayami Matsumura",
+            company: "Procter & Gamble",
+            title: "Product Research Intern",
+            year: "Sophomore"
+        },
+        {
+            name: "Nina Cheuck",
+            company: "k-ID",
+            title: "Program Design Intern",
+            year: "Sophomore"
+        },
+        {
+            name: "Carly Chen",
+            company: "Uber",
+            title: "Software Engineer Intern",
+            year: "Freshmen"
+        },
+    ]
+    }, 
+    {
         timeline: "2023 FULL-TIME PLACEMENT", 
         data: [
         {
@@ -39,6 +255,20 @@ const placements = [
             name: "Katherine Gan",
             company: "Microsoft",
             title: "Program Manager",
+            year: "Senior"
+
+        },
+        {
+            name: "Maya Haylock",
+            company: "Mastercard",
+            title: "Associate Product Specialist",
+            year: "Senior"
+
+        },
+        {
+            name: "Justin Quan",
+            company: "Retool",
+            title: "Engineer",
             year: "Senior"
 
         },

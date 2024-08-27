@@ -9,7 +9,7 @@ const Panel = styled.div`
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
@@ -21,8 +21,8 @@ const Panel = styled.div`
 
     @media only screen and (max-width: 450px){
         display: flex; 
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
     }
     // border: solid black; 
 `
@@ -162,6 +162,14 @@ const ApplicationButton = styled.button`
     &:hover {
         cursor: pointer;
     } 
+    @media only screen and (max-width: 600px) {
+        width: auto;
+
+    }
+
+    
+
+    // border: solid black 1px;
 `
 
 const handleLinkClick = () => {
@@ -175,7 +183,7 @@ function ApplyPanel() {
       };
 
     return (
-        <Panel>
+    <Panel> 
         <OpeningHeader>
             <HeadingTitle> Apply</HeadingTitle>
             <HeadingSubtitle> 
@@ -183,23 +191,24 @@ function ApplyPanel() {
                 Product Space welcomes anyone with a passion for PM 
                 to apply. Join us and shape your product journey! 
                 </HeadingInfo>
-                <ApplicationButton  role="link"
-                onClick={() => openInNewTab("https://forms.gle/USwup7Xfoqh8tazD6")}>
-                    Start Application
-                </ApplicationButton>
+                <ApplicationButton style={{border: "none"}}/>
+               <ApplicationButton
+                        role="link" style={{zIndex: "100"}}
+                        onClick={() => openInNewTab("https://docs.google.com/forms/d/e/1FAIpQLSfb8HSYnon8dmtBfMp0Kgk7wWX4HF139PLhNvve99T_sDcnZw/closedform")}>
+                            Start Application
+                    </ApplicationButton> 
 
-            </HeadingSubtitle>
+             </HeadingSubtitle>
 
             
         </OpeningHeader>
         <PictureContainer> 
-                <PictureBox src={sp23funboard} />
-            </PictureContainer>
-        
-
-        </Panel>
-
+             <PictureBox src={sp23funboard} />
+        </PictureContainer>
+     </Panel> 
     )
 }
 
 export default ApplyPanel;
+
+
