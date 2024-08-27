@@ -134,16 +134,16 @@ const AboutPanelPicContainer = styled.div`
 
 `
 const AboutHPictureBox = styled.img`
-    width: 650px;
-    height: 460px;
+    width: 460px;
+    height: 400px;
 
     object-fit: cover;
     object-position: center;
 
 `;
 const AboutVPictureBox = styled.img`
-    width: 410px;
-    height: 620px;
+    width: 360px;
+    height: 520px;
 
     object-fit: cover;
     object-position: center;
