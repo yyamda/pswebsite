@@ -36,6 +36,8 @@ const FullName = styled.div`
     font-weight: 800;
     border-radius: 5px;
 
+    text-align: center;
+
     background-color: #6F358E;
     color: white; 
 `
