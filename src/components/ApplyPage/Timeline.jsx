@@ -250,9 +250,9 @@ function Timeline() {
                         <DateText> 9/6 (Fri) </DateText>
                     </DateRow>
                     <InfoRow> 
-                        <RowTitle> Applications Close! (8PM PST)  </RowTitle>
+                        <RowTitle> Applications Close! (11:59PM PST)  </RowTitle>
                         <RowDescription>
-                        Submit your Product Space application by 8pm Pacific Time on this date!
+                        Submit your Product Space application by midnight Pacific Time on this date!
                         </RowDescription>
                     </InfoRow>
                 </Row>

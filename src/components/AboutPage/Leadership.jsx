@@ -25,6 +25,7 @@ import ryan from "../images/people/ryan.png"
 
 
 
+
 import memberInfo from "../AboutPage/MemberInfo"
 
 const imageMap = {

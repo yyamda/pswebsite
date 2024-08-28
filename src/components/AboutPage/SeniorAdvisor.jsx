@@ -30,7 +30,17 @@ import prashant from "../images/people/prashantmalyala.png"
 import ismail from "../images/people/ismailazam.png"
 import lily from "../images/people/lilyli.png"
 import atharva from "../images/people/atharvamehendale.png"
-
+import neal from "../images/people/nealkothari.png"
+import trinity from "../images/people/trinityhuynh.png"
+import momo from "../images/people/momosiu.png"
+import dan from "../images/people/danzhu.png"
+import michellenguyen from "../images/people/michellenguyen.png"
+import tarun from "../images/people/tarunsreedhar.png"
+import crystal from "../images/people/crystalchang.png"
+import roma from "../images/people/romadesai.png"
+import tsadi from "../images/people/tsadiobolu.png"
+import rickey from "../images/people/rickeymcgregor.png"
+import saumya from "../images/people/saumyachoudhary.png"
 
 const imageMap = {
 
@@ -62,7 +72,18 @@ const imageMap = {
     "prashantmalyala": prashant,
     "ismailazam": ismail,
     "lilyli": lily,
-    "atharvamehendale": atharva
+    "atharvamehendale": atharva,
+    "trinityhuynh": trinity,
+    "nealkothari": neal,
+    "momosiu": momo,
+    "danzhu": dan,
+    "michellenguyen": michellenguyen,
+    "tarunsreedhar": tarun,
+    "crystalchang": crystal,
+    "romadesai": roma,
+    "tsadiobolu": tsadi,
+    "rickeymcgregor": rickey,
+    "saumyachoudhary": saumya
 }
 
 

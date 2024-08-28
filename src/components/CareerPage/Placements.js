@@ -184,6 +184,12 @@ const placements = [
             year: "Sophomore"
         },
         {
+            name: "Suhani Ramchandra",
+            company: "MediaLink",
+            title: "Consulting Intern",
+            year: "Sophomore"
+        },
+        {
             name: "Anna Cheng",
             company: "Capital One",
             title: "Business Analyst Intern ",
@@ -249,14 +255,30 @@ const placements = [
             company: "New Relic",
             title: "Business Systems Analyst",
             year: "Senior"
-
+        },
+        {
+            name: "Tarun Sreedhar",
+            company: "Epic",
+            title: "Software Developer",
+            year: "Senior"
+        },
+        {
+            name: "Saumya Choudhary",
+            company: "Mastercard",
+            title: "Associate Product Manager",
+            year: "Senior"
+        },
+        {
+            name: "Neal Kothari",
+            company: "GAP",
+            title: "Product Manager",
+            year: "Senior"
         },
         {
             name: "Katherine Gan",
             company: "Microsoft",
             title: "Program Manager",
             year: "Senior"
-
         },
         {
             name: "Maya Haylock",

@@ -40,10 +40,10 @@ const members = {
             imagepath: "../images/people/yuta.png",
             imagekey: "yutayamada",
             fullname: "Yuta Yamada",
-            position: "VP Development",
+            position: "VP of Development",
             grade: "Senior",
             major: "Computer Science, Data Science, Cognitive Science",
-            hobbies: "Tennis, music, working in jst, nintendo games, viewsights",
+            hobbies: "tennis, music, working in jst, trying to talk like harvey",
             email: "yutayamada@berkeley.edu",
             linkedin: "https://www.linkedin.com/in/yutayamada/",
             calendlylink: "https://calendly.com/yutayamada/product-space-coffee-chat"
@@ -105,7 +105,7 @@ const members = {
             major: "IEOR, Data Science",
             hobbies: "Doomscrolling on Yelp, Brawl Stars, lifting with Su",
             email: "andyswei@berkeley.edu",
-            linkedin: "linkedin.com/in/andy-s-wei",
+            linkedin: "https://www.linkedin.com/in/andy-s-wei/",
             calendlylink: "https://calendly.com/andyswei"
         },
         {
@@ -133,18 +133,6 @@ const members = {
             calendlylink: "https://calendly.com/nina-cheuck/30min"
         },
         {
-            imagepath: "../images/people/suhaniramchandra.png",
-            imagekey: "suhanir",
-            fullname: "Suhani R.",
-            position: "Project Manager",
-            grade: "Junior",
-            major: "Business, Data Science ",
-            hobbies: "travelling, photography, cafe hopping, shopping, anna cheng ",
-            email: "suhanir@berkeley.edu",
-            linkedin: "https://www.linkedin.com/in/suhanir",
-            calendlylink: "https://calendly.com/suhanir-ldy/30min"
-        },
-        {
             imagepath: "../images/people/christine.png",
             imagekey: "christinewong",
             fullname: "Christine Wong",
@@ -157,6 +145,30 @@ const members = {
             calendlylink: "https://calendly.com/christineywong/30min"
         },
         {
+            imagepath: "../images/people/chrislee.png",
+            imagekey: "chrislee",
+            fullname: "Chris Lee",
+            position: "Project Manager",
+            grade: "Junior",
+            major: "Data Science, Economics",
+            hobbies: "Basketball, Casino, Working out, Roof topping",
+            email: "chrislee03@berkeley.edu",
+            linkedin: "https://www.linkedin.com/in/chrisjlee03/",
+            calendlylink: "https://calendly.com/chrislee03-berkeley"
+        },
+        {
+            imagepath: "../images/people/suhaniramchandra.png",
+            imagekey: "suhanir",
+            fullname: "Suhani R.",
+            position: "Project Manager",
+            grade: "Junior",
+            major: "Business, Data Science ",
+            hobbies: "travelling, photography, cafe hopping, shopping, anna cheng ",
+            email: "suhanir@berkeley.edu",
+            linkedin: "https://www.linkedin.com/in/suhanir",
+            calendlylink: "https://calendly.com/suhanir-ldy/30min"
+        },
+        {
             imagepath: "../images/people/rickxu.png",
             imagekey: "rickxu",
             fullname: "Rick Xu",
@@ -164,9 +176,9 @@ const members = {
             grade: "Sophomore",
             major: "EECS, Business",
             hobbies: "paying out of state tuition, preparing to be ps president, being a phenomenal little to my big (vicky)",
-            email: "suhanir@berkeley.edu",
-            linkedin: "https://www.linkedin.com/in/suhanir",
-            calendlylink: "https://calendly.com/suhanir-ldy/30min"
+            email: "rickxu@berkeley.edu",
+            linkedin: "https://www.linkedin.com/in/rickx",
+            calendlylink: "https://calendly.com/rickxu-berkeley"
         },
         {
             imagepath: "../images/people/annacheng.png",
@@ -189,7 +201,7 @@ const members = {
             major: "Cognitive Science, Data Science",
             hobbies: "makeup/fashion, late night adventures, rewatching netflix shows, snowboarding, traveling",
             email: "lauren.sung@berkeley.edu",
-            linkedin: "www.linkedin.com/in/laurenksung",
+            linkedin: "https://www.linkedin.com/in/laurenksung/",
             calendlylink: "https://calendly.com/laurensung"
         },
         {
@@ -210,11 +222,11 @@ const members = {
             fullname: "Melanie Hsiang",
             position: "Historian",
             grade: "Junior",
-            major: "Business, Cognitive Science",
+            major: "Cognitive Science, Data Science",
             hobbies: "watching reruns of Good Will Hunting, collecting an egregious number of denim jeans",
             email: "melaniehsiang@berkeley.edu",
             linkedin: "https://www.linkedin.com/in/melaniehsiang/",
-            calendlylink: "https://calendly.com/melaniehsiang/sp24-coffee-chat-w-melanie?month=2024-08"
+            calendlylink: "https://calendly.com/melaniehsiang/coffeechat"
         },
         {
             imagepath: "../images/people/ryan.png",
@@ -338,23 +350,71 @@ const members = {
             imagepath: "../images/people/ryan.png",
             imagekey: "ryansun",
             fullname: "Ryan Sun",
-            position: "VP Projects SP'23",
+            position: "VP Projects FA'22",
             class: "2023",
             major: "Computer Science, Data Science"
+        },
+        {
+            imagepath: "../images/people/trinityhuynh.png",
+            imagekey: "trinityhuynh",
+            fullname: "Trinity Huynh",
+            position: "Project Manager SP'23",
+            class: "2023",
+            major: "Business, Data Science"
+        },
+        {
+            imagepath: "../images/people/tarunsreedhar.png",
+            imagekey: "tarunsreedhar",
+            fullname: "Tarun Sreedhar",
+            position: "Project Manager SP'23",
+            class: "2023",
+            major: "Computer Science, Data Science"
+        },
+        {
+            imagepath: "../images/people/trinityhuynh.png",
+            imagekey: "michellenguyen",
+            fullname: "Michelle Nguyen",
+            position: "Content Manager SP'23",
+            class: "2024",
+            major: "Business, Data Science"
+        },
+        {
+            imagepath: "../images/people/tsadiobolu.png",
+            imagekey: "tsadiobolu",
+            fullname: "Tsadiku Obolu",
+            position: "Growth Associate SP'23",
+            class: "2024",
+            major: "EECS, Business"
+        },
+        {
+            imagepath: "../images/people/rickeymcgregor.png",
+            imagekey: "rickeymcgregor",
+            fullname: "Rickey McGregor",
+            position: "Growth Associate SP'23",
+            class: "2024",
+            major: "Computer Science, Interdisciplinary Studies"
+        },
+        {
+            imagepath: "../images/people/crystalchang.png",
+            imagekey: "crystalchang",
+            fullname: "Crystal Chang",
+            position: "Project Associate SP'23",
+            class: "2023",
+            major: "EECS, Business"
+        },
+        {
+            imagepath: "../images/people/danzhu.png",
+            imagekey: "danzhu",
+            fullname: "Daniel Zhu",
+            position: "IVP FA'22",
+            class: "2023",
+            major: "Business, Data Science"
         },
         {
             imagepath: "../images/people/mayahaylock.png",
             imagekey: "mayahaylock",
             fullname: "Maya Haylock",
             position: "VP Fellowship FA'22",
-            class: "2023",
-            major: "Computer Science, Business"
-        },
-        {
-            imagepath: "../images/people/advaitmarathe.png",
-            imagekey: "advaitmarathe",
-            fullname: "Advait Marathe",
-            position: "SP'23",
             class: "2023",
             major: "Computer Science, Business"
         },
@@ -367,14 +427,6 @@ const members = {
             major: "Data Science, Economics"
         },
         {
-            imagepath: "../images/people/arnavgupta.png",
-            imagekey: "arnavgupta",
-            fullname: "Arnav Gupta",
-            position: "IVP SP'23",
-            class: "2023",
-            major: "Computer Science, Data Science"
-        },
-        {
             imagepath: "../images/people/jerryzhang.png",
             imagekey: "jerryzhang",
             fullname: "Jerry Zhang",
@@ -383,12 +435,60 @@ const members = {
             major: "Computer Science, Business"
         },
         {
+            imagepath: "../images/people/nealkothari.png",
+            imagekey: "nealkothari",
+            fullname: "Neal Kothari",
+            position: "Fellowship Mentor SP'22",
+            class: "2023",
+            major: "Business, Data Science"
+        },
+        {
+            imagepath: "../images/people/momosiu.png",
+            imagekey: "momosiu",
+            fullname: "Momo Siu",
+            position: "VP Projects SP'22",
+            class: "2023",
+            major: "Data Science, Economics"
+        },
+        {
+            imagepath: "../images/people/saumyachoudhary.png",
+            imagekey: "saumyachoudhary",
+            fullname: "Saumya Choudhary",
+            position: "Senior Advisor SP'22",
+            class: "2023",
+            major: "Data Science, Statistics"
+        },
+        {
+            imagepath: "../images/people/romadesai.png",
+            imagekey: "romadesai",
+            fullname: "Roma Desai",
+            position: "Senior Advisor SP'22",
+            class: "2022",
+            major: "EECS, Business"
+        },
+        {
             imagepath: "../images/people/sahilmehta.png",
             imagekey: "sahilmehta",
             fullname: "Sahil Mehta",
             position: "VP Operations FA'22",
             class: "2023",
             major: "EECS, Business"
+        },
+        {
+            imagepath: "../images/people/advaitmarathe.png",
+            imagekey: "advaitmarathe",
+            fullname: "Advait Marathe",
+            position: "SP'22",
+            class: "2023",
+            major: "Computer Science, Business"
+        },
+        {
+            imagepath: "../images/people/arnavgupta.png",
+            imagekey: "arnavgupta",
+            fullname: "Arnav Gupta",
+            position: "IVP SP'22",
+            class: "2023",
+            major: "Business, IEOR"
         },
         {
             imagepath: "../images/people/vigneshsiva.png",
