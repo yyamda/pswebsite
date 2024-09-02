@@ -221,7 +221,7 @@ function Timeline() {
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> Info Session (8 - 10 PM PT) </RowTitle>
-                        <RowLocation> Location: TBD</RowLocation>
+                        <RowLocation> Location: Wheeler 224</RowLocation>
                         <RowDescription>
                             Join us to get a glimpse into the way we do 
                             things at Product Space @ Berkeley.
@@ -234,7 +234,7 @@ function Timeline() {
                     </DateRow>
                     <InfoRow> 
                         <RowTitle> PS Case Workshop (8 - 10 PM PT) </RowTitle>
-                        <RowLocation> Location: TBD</RowLocation>
+                        <RowLocation> Location: The Standard at Berkeley (1st Floor Lounge)</RowLocation>
                         <RowDescription>
                         Whether you're completely new to PM or experienced, 
                         the Intro to PM workshop—led by a senior PS member—is 

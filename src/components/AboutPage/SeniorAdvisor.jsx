@@ -41,6 +41,7 @@ import roma from "../images/people/romadesai.png"
 import tsadi from "../images/people/tsadiobolu.png"
 import rickey from "../images/people/rickeymcgregor.png"
 import saumya from "../images/people/saumyachoudhary.png"
+import ananya from "../images/people/ananyagupta.png"
 
 const imageMap = {
 
@@ -83,7 +84,8 @@ const imageMap = {
     "romadesai": roma,
     "tsadiobolu": tsadi,
     "rickeymcgregor": rickey,
-    "saumyachoudhary": saumya
+    "saumyachoudhary": saumya,
+    "ananyagupta": ananya
 }
 
 

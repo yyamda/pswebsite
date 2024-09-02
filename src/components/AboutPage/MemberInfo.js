@@ -209,9 +209,9 @@ const members = {
             imagekey: "marissajensen",
             fullname: "Marissa Jensen",
             position: "Content Manager",
-            grade: "Senior",
-            major: "Cognitive Science, Data Science",
-            hobbies: "makeup/fashion, late night adventures, rewatching netflix shows, snowboarding, traveling",
+            grade: "Junior",
+            major: "Data Science, Business ",
+            hobbies: "Travel, Volleyball, Thrifting, Hiking, Trader Joe's",
             email: "marissajensen@berkeley.edu",
             linkedin: "http://linkedin.com/in/marissa-jensen",
             calendlylink: "https://calendly.com/marissajensen/coffee-chat"
@@ -502,9 +502,17 @@ const members = {
             imagepath: "../images/people/brandonqin.png",
             imagekey: "brandonqin",
             fullname: "Brandon Qin",
-            position: "IVP/EVP FA'21",
+            position: "EVP FA'21",
             class: "2023",
             major: "Data Science, Business"
+        },
+        {
+            imagepath: "../images/people/ananyagupta.png",
+            imagekey: "ananyagupta",
+            fullname: "Ananya Gupta",
+            position: "IVP FA'21",
+            class: "2023",
+            major: "IEOR, Data Science"
         },
         {
             imagepath: "../images/people/justinquan.png",
